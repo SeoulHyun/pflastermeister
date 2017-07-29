@@ -5,6 +5,70 @@ body {
     margin: 0;
     padding: 0;
     border: none;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+    background-color: white;
+    margin: 0 10% 0 auto;
+
+    &__image {
+        height: 100px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.title {
+    width: 100%;
+    background-color: rgba(181, 77, 48, 0.7);
+    text-align: center;
+
+    padding: 10px 0;
+    margin-top: 500px;
+
+    &__text {
+        color: white;
+    }
+
+    &--centered {
+        margin-top: 350px;
+    }
 }
 
 @import 'pflastermeister';
+@import 'pavingtools';
+@import 'technology';
+@import 'trainings';
+
+/* ======= CONTACT ========= */
+#contact {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    padding: 15px 20px;
+
+    background-color: white;
+
+    .contact__text {
+        text-transform: uppercase;
+    }
+}

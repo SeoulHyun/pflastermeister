@@ -1,23 +1,73 @@
 body {
   margin: 0;
   padding: 0;
-  border: none; }
+  border: none;
+  font-family: 'Montserrat', sans-serif; }
 
-#pflastermeister {
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
   width: 100%;
-  height: 750px;
-  background-image: url("../images/Background_Pflastermeister_1.jpg");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  #pflastermeister .logo {
-    width: 100px;
-    background-color: white; }
-    #pflastermeister .logo__image {
-      height: 100px;
-      background-image: url("../images/pflastermeister-2.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%; }
+
+.logo {
+  width: 100px;
+  background-color: white;
+  margin: 0 10% 0 auto; }
+  .logo__image {
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+
+.title {
+  width: 100%;
+  background-color: rgba(181, 77, 48, 0.7);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 500px; }
+  .title__text {
+    color: white; }
+  .title--centered {
+    margin-top: 350px; }
+
+#pflastermeister {
+  background-image: url("../images/Background_Pflastermeister_2.jpg"); }
+  #pflastermeister .logo__image {
+    background-image: url("../images/pflastermeister-2.svg"); }
+  #pflastermeister .title {
+    width: 100%;
+    background-color: rgba(181, 77, 48, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 500px; }
+    #pflastermeister .title__text {
+      color: white; }
+
+#pavingtools {
+  background-image: url("../images/Background_Pflastermeister_1.jpg"); }
+  #pavingtools .logo__image {
+    background-image: url("../images/Logo_Pavingtools_orange_invert.svg"); }
+
+#technology {
+  background-image: url("../images/Background_Technology-2.jpg"); }
+
+#skillstraining {
+  background-image: url("../images/Background_Trainings_2.jpg"); }
+
+/* ======= CONTACT ========= */
+#contact {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  padding: 15px 20px;
+  background-color: white; }
+  #contact .contact__text {
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=mainStyle.css.map */
