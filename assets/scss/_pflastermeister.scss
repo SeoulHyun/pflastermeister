@@ -1,0 +1,24 @@
+#pflastermeister {
+    width: 100%;
+
+    height: 750px;
+
+    background-image: url("../images/Background_Pflastermeister_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .logo {
+        width: 100px;
+        background-color: white;
+
+        &__image {
+            height: 100px;
+
+            background-image: url("../images/pflastermeister-2.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+}
