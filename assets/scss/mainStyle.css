@@ -56,9 +56,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #technology {
   background-image: url("../images/background_technology_2.jpg"); }
+  #technology .logo__image {
+    background-image: url("../images/logo_pflastermeister_1.svg"); }
 
 #skillstraining {
   background-image: url("../images/background_trainings_2.jpg"); }
+  #skillstraining .logo__image {
+    background-image: url("../images/logo_training.svg"); }
 
 /* ======= CONTACT ========= */
 #contact {
