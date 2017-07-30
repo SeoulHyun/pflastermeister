@@ -21,12 +21,15 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .logo {
+    position: absolute;
+    right: 10%;
     width: 100px;
     background-color: white;
-    margin: 0 10% 0 auto;
+
 
     &__image {
         height: 100px;
@@ -38,19 +41,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
+    position: relative;
+    top: 50%;
+
     width: 100%;
     background-color: $orangeTransparent;
     text-align: center;
 
     padding: 10px 0;
-    margin-top: 500px;
 
     &__text {
         color: white;
     }
 
     &--centered {
-        margin-top: 350px;
+        //margin-top: 350px;
     }
 }
 

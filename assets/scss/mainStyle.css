@@ -13,12 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .logo {
+  position: absolute;
+  right: 10%;
   width: 100px;
-  background-color: white;
-  margin: 0 10% 0 auto; }
+  background-color: white; }
   .logo__image {
     height: 100px;
     background-position: center;
@@ -26,15 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 100%; }
 
 .title {
+  position: relative;
+  top: 50%;
   width: 100%;
   background-color: rgba(214, 103, 77, 0.5);
   text-align: center;
-  padding: 10px 0;
-  margin-top: 500px; }
+  padding: 10px 0; }
   .title__text {
     color: white; }
-  .title--centered {
-    margin-top: 350px; }
 
 #pflastermeister {
   background-image: url("../images/background_pflastermeister_2.jpg"); }
@@ -44,8 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-color: rgba(181, 77, 48, 0.7);
     text-align: center;
-    padding: 10px 0;
-    margin-top: 500px; }
+    padding: 10px 0; }
     #pflastermeister .title__text {
       color: white; }
 
