@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   width: 100%;
-  background-color: rgba(181, 77, 48, 0.7);
+  background-color: rgba(214, 103, 77, 0.5);
   text-align: center;
   padding: 10px 0;
   margin-top: 500px; }
@@ -73,5 +73,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white; }
   #contact .contact__text {
     text-transform: uppercase; }
+    #contact .contact__text a {
+      color: #d6674d;
+      text-decoration: none; }
 
 /*# sourceMappingURL=mainStyle.css.map */
