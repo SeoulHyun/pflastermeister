@@ -37,9 +37,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 350px; }
 
 #pflastermeister {
-  background-image: url("../images/Background_Pflastermeister_2.jpg"); }
+  background-image: url("../images/background_pflastermeister_2.jpg"); }
   #pflastermeister .logo__image {
-    background-image: url("../images/pflastermeister-2.svg"); }
+    background-image: url("../images/logo_pflastermeister_2.svg"); }
   #pflastermeister .title {
     width: 100%;
     background-color: rgba(181, 77, 48, 0.7);
@@ -50,15 +50,15 @@ h1, h2, h3, h4, h5, h6 {
       color: white; }
 
 #pavingtools {
-  background-image: url("../images/Background_Pflastermeister_1.jpg"); }
+  background-image: url("../images/background_pflastermeister_1.jpg"); }
   #pavingtools .logo__image {
-    background-image: url("../images/Logo_Pavingtools_orange_invert.svg"); }
+    background-image: url("../images/logo_pavingtools.svg"); }
 
 #technology {
-  background-image: url("../images/Background_Technology-2.jpg"); }
+  background-image: url("../images/background_technology_2.jpg"); }
 
 #skillstraining {
-  background-image: url("../images/Background_Trainings_2.jpg"); }
+  background-image: url("../images/background_trainings_2.jpg"); }
 
 /* ======= CONTACT ========= */
 #contact {
