@@ -1,6 +1,7 @@
 @import 'colors';
 @import '../../node_modules/susy/sass/susy';
 
+/* ===== GLOBAL SETTINGS ====== */
 body {
     margin: 0;
     padding: 0;
@@ -14,20 +15,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 a {
     text-decoration: none;
 }
 
 .main_button {
     background-color: $orange;
-    padding: 20px 15px;
     display: inline-block;
 
     a {
+        display: block;
         color: white;
         font-size: 20px;
+        padding: 20px 15px;
     }
 }
+
+/* ====== SECTIONS ======= */
 
 .wrapper {
     width: 100%;
@@ -103,7 +111,6 @@ a {
     margin-left: 10%;
 
     .header {
-        font-size: 30px;
         color: $orange;
     }
 

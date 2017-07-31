@@ -1,3 +1,4 @@
+/* ===== GLOBAL SETTINGS ====== */
 body {
   margin: 0;
   padding: 0;
@@ -8,17 +9,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0; }
 
+h1 {
+  font-size: 4em; }
+
 a {
   text-decoration: none; }
 
 .main_button {
   background-color: #d6674d;
-  padding: 20px 15px;
   display: inline-block; }
   .main_button a {
+    display: block;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 20px 15px; }
 
+/* ====== SECTIONS ======= */
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -68,7 +74,6 @@ a {
   width: 50%;
   margin-left: 10%; }
   .content .header {
-    font-size: 30px;
     color: #d6674d; }
   .content .text {
     font-size: 18px;
