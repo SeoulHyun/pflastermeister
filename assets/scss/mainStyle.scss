@@ -14,6 +14,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.main_button {
+    background-color: $orange;
+    padding: 20px 15px;
+    display: inline-block;
+
+    a {
+        color: white;
+        font-size: 20px;
+    }
+}
+
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -27,14 +42,25 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     position: absolute;
     right: 10%;
+
+    @supports (position: sticky) or (position: -webkit-sticky) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        margin: 0 10% 0 auto;
+    }
+
+    z-index: 2;
+
     width: 150px;
     background-color: white;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 
     &__image {
         height: 150px;
 
-        background-position: center;
-        background-repeat: no-repeat;
+        background: no-repeat center;
         background-size: 100%;
 
         transition: all 0.3s;
@@ -104,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+
 }
 
 
