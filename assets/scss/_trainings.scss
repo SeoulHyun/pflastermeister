@@ -15,18 +15,6 @@
     }
 
     .content {
-        width: 50%;
-        margin-left: 10%;
-
-        .header {
-            font-size: 30px;
-            color: $orange;
-        }
-
-        .text {
-            font-size: 18px;
-            line-height: 1.5;
-            text-align: justify;
-        }
+        display: block;
     }
 }

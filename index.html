@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Pflastermeister</title>
-    <link rel="stylesheet" href="assets/scss/mainStyle.css">
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/parallax.js"></script>
 
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+
+            var toolsPos = $("#pavingtools_hover").position().top,
+                currScrollPos = $(window).scrollTop();
+
+            if (currScrollPos > toolsPos-500) {
+                $('#pavingtools_hover .content').fadeIn(1500);
+            }
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/scss/mainStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 </head>
 <body>

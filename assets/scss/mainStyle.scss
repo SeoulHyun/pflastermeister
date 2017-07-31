@@ -80,7 +80,7 @@ a {
 
 .title {
     position: relative;
-    top: 60%;
+    top: 50%;
 
     width: 100%;
     background-color: $orangeTransparent;
@@ -96,6 +96,24 @@ a {
         //margin-top: 350px;
     }
 }
+
+.content {
+    display: none;
+    width: 50%;
+    margin-left: 10%;
+
+    .header {
+        font-size: 30px;
+        color: $orange;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+
 
 @import 'pflastermeister';
 @import 'pavingtools';

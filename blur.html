@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(window).scroll(function() {
+                // スクロールの位置取得
+                // Get scroll position
+                var s = $(window).scrollTop(),
+                    // スクロールの値と透明度
+                    // scroll value and opacity
+                    opacityVal = (s / 150.0);
+                // blurの画像の透明度を0%から100％
+                // opacity value 0% to 100%
+                $('#pavingtools_hover').css('opacity', opacityVal);
+            });
+        </script>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .test {
+                height: 200vh;
+                width: 100vw;
+                
+                background-image: url("assets/images/background_pflastermeister_1.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+
+            }
+
+            #pavingtools {
+                height: 200vh;
+                width: 100vw;
+            }
+
+            #pavingtools_hover {
+                position: absolute;
+                top: 0;
+                opacity: 1;
+                height: 200vh;
+                width: 100vw;
+
+                background-image: url("assets/images/background_pflastermeister_1_hover.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            #training {
+                height: 200vh;
+                width: 100vw;
+
+                background-image: url("assets/images/background_trainings_2.jpg_hover");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            #training_hover {
+                position: absolute;
+                top: 0;
+                opacity: 1;
+                height: 200vh;
+                width: 100vw;
+
+                background-image: url("assets/images/background_trainings_2.jpg_hover");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .space {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .title {
+                position: relative;
+                top: 40%;
+
+                width: 100%;
+                background-color: orange;
+                text-align: center;
+
+                padding: 10px 0;
+
+                transition: display 300ms ease-in-out;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test">
+            <div id="pavingtools" class="wrapper">
+                <div class="logo">
+                    <div class="logo__image"><a class="logo__link" href="#"></a></div>
+                </div>
+
+                <div class="title title--centered">
+                    <h1 class="title__text">Tools</h1>
+                </div>
+            </div>
+
+            <div id="pavingtools_hover" class="wrapper">
+                <div class="space"></div>
+                <div class="logo">
+                    <div class="logo__image"><a class="logo__link" href="#"></a></div>
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        <h1>Tools</h1>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Unsere hochwertigen PFlasterwerkzeuge sind handgeschmiedet und speziell gehärtet.
+                            Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend.
+                            Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitive
+                            und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir
+                            so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker
+                            abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.
+                        </p>
+                    </div>
+                    <div class="main_button"><a href="#">Weiter zu Pavingtools</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test">
+            <div id="training" class="wrapper">
+                <div class="logo">
+                    <div class="logo__image"><a class="logo__link" href="#"></a></div>
+                </div>
+
+                <div class="title title--centered">
+                    <h1 class="title__text">Tools</h1>
+                </div>
+            </div>
+
+            <div id="training_hover" class="wrapper">
+                <div class="space"></div>
+                <div class="logo">
+                    <div class="logo__image"><a class="logo__link" href="#"></a></div>
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        <h1>Tools</h1>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Unsere hochwertigen PFlasterwerkzeuge sind handgeschmiedet und speziell gehärtet.
+                            Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend.
+                            Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitive
+                            und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir
+                            so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker
+                            abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.
+                        </p>
+                    </div>
+                    <div class="main_button"><a href="#">Weiter zu Pavingtools</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

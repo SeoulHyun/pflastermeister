@@ -55,13 +55,25 @@ a {
 
 .title {
   position: relative;
-  top: 60%;
+  top: 50%;
   width: 100%;
   background-color: rgba(214, 103, 77, 0.5);
   text-align: center;
   padding: 10px 0; }
   .title__text {
     color: white; }
+
+.content {
+  display: none;
+  width: 50%;
+  margin-left: 10%; }
+  .content .header {
+    font-size: 30px;
+    color: #d6674d; }
+  .content .text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify; }
 
 #pflastermeister {
   background-image: url("../images/background_pflastermeister_2.jpg"); }
@@ -86,16 +98,6 @@ a {
   #pavingtools_hover .logo__image {
     background-image: url("../images/logo_pavingtools.svg");
     background-size: 70%; }
-  #pavingtools_hover .content {
-    width: 50%;
-    margin-left: 10%; }
-    #pavingtools_hover .content .header {
-      font-size: 30px;
-      color: #d6674d; }
-    #pavingtools_hover .content .text {
-      font-size: 18px;
-      line-height: 1.5;
-      text-align: justify; }
 
 #technology {
   background-image: url("../images/background_technology_2.jpg"); }
@@ -108,15 +110,7 @@ a {
     background-image: url("../images/logo_training.svg");
     background-size: 70%; }
   #technology_hover .content {
-    width: 50%;
-    margin-left: 10%; }
-    #technology_hover .content .header {
-      font-size: 30px;
-      color: #d6674d; }
-    #technology_hover .content .text {
-      font-size: 18px;
-      line-height: 1.5;
-      text-align: justify; }
+    display: block; }
 
 #skillstraining {
   background-image: url("../images/background_trainings_2.jpg"); }
@@ -129,15 +123,7 @@ a {
     background-image: url("../images/logo_training.svg");
     background-size: 70%; }
   #skillstraining_hover .content {
-    width: 50%;
-    margin-left: 10%; }
-    #skillstraining_hover .content .header {
-      font-size: 30px;
-      color: #d6674d; }
-    #skillstraining_hover .content .text {
-      font-size: 18px;
-      line-height: 1.5;
-      text-align: justify; }
+    display: block; }
 
 /* ======= CONTACT ========= */
 #contact {
