@@ -25,7 +25,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    transition: all 0.3s; }
+    .logo__image:hover {
+      transform: scale(1.1); }
+  .logo__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
 
 .title {
   position: relative;
@@ -52,7 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 #pavingtools {
   background-image: url("../images/background_pflastermeister_1.jpg"); }
   #pavingtools .logo__image {
-    background-image: url("../images/logo_pavingtools.svg"); }
+    background-image: url("../images/logo_pavingtools.svg");
+    background-size: 70%; }
 
 #technology {
   background-image: url("../images/background_technology_2.jpg"); }
@@ -76,5 +85,15 @@ h1, h2, h3, h4, h5, h6 {
     #contact .contact__text a {
       color: #d6674d;
       text-decoration: none; }
+
+#contact_form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: blue; }
 
 /*# sourceMappingURL=mainStyle.css.map */
