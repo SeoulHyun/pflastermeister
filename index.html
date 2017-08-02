@@ -5,16 +5,20 @@
     <title>Pflastermeister</title>
 
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
     <script>
-        $(window).scroll(function () {
-
-            var toolsPos = $("#pavingtools_hover").position().top,
-                currScrollPos = $(window).scrollTop();
-
-            if (currScrollPos > toolsPos-500) {
-                $('#pavingtools_hover .content').fadeIn(1500);
-            }
-        });
+//        $(window).scroll(function () {
+//
+//            var toolsPos = $("#pavingtools_hover").position().top,
+//                currScrollPos = $(window).scrollTop();
+//
+//            if (currScrollPos > toolsPos-500) {
+//                $('#pavingtools_hover .content').fadeIn(1500);
+//            }
+//        });
     </script>
 
     <link rel="stylesheet" href="assets/scss/mainStyle.css">
@@ -29,6 +33,94 @@
 
         <div class="title">
             <h1 class="title__text">Alles rund um das Pflasterhandwerk</h1>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact__content">
+            <div class="contact_form contact_wrapper">
+                <h2>Kontakt</h2>
+                <input type="text" name="" id="" placeholder="Anrede">
+                <input type="text" name="" id="" placeholder="Vorname">
+                <input type="text" name="" id="" placeholder="Nachname">
+                <input type="text" name="" id="" placeholder="Firma">
+                <input type="text" name="" id="" placeholder="Adresse">
+                <input type="text" name="" id="" placeholder="PLZ">
+                <input type="text" name="" id="" placeholder="Ort">
+                <input type="text" name="" id="" placeholder="Land">
+                <input type="textarea" placeholder="Ihre Nachricht">
+
+            </div>
+            <div class="contact_credits contact_wrapper">
+                <h2>Impressum</h2>
+                <p>
+                    <strong>Betreiber / Verantwortlicher für den Inhalt</strong><br>
+                    Carola Tomasek <br>
+                    Hochrain 16 <br>
+                    4842 Zell am Pettenfirst
+                </p>
+                <p>
+                    Telefon: 0043 (0) 699 1000 72 18 <br>
+                    info@pavingtools.at <br>
+                    http://www.pavingtools.at
+                </p>
+                <p>
+                    <b>Gewerberegisternummer</b> <br>
+                    417/24448
+                </p>
+                <p>
+                    <b>Gerichtsstand</b> <br>
+                    Bezirksgericht Vöcklabruck
+                </p>
+                <p>
+                    <b>Kammer</b> <br>
+                    Wirtschaftskammer Oberösterreich
+                </p>
+                <p>
+                    <b>Umsatzsteuer-Identifikationsnummer</b> <br>
+                    ATU67305114
+                </p>
+                <p>
+                    <b>Behörde gemäß §55ECG</b> <br>
+                    Bezirkshauptmannschaft Vöcklabruck
+                </p>
+                <p>
+                    <b>Eintrag bei WK Österreich</b><br>
+                    Firmen A-Z
+                </p>
+            </div>
+            <div class="contact_copyright contact_wrapper">
+                <b>Copyright</b>
+                <div>
+                    Inhalt, Struktur und Layout der Website „www.pavingtools.at“ sind urheberrechtlich
+                    geschützt. Urheberrechte für Bildmaterial, Texte und andere geschützte Werke, Marken
+                    und Kennzeichen werden dadurch nicht beschnitten. Die Vervielfältigung (inklusive des
+                    Ausdrucks auf Papier) oder die Verwendung der Website bzw. Teilen davon zu Informationszwecken
+                    ist gestattet. Jede andere Verwendung der auf dieser Website verfügbaren Inhalte zu
+                    einem anderen als dem oben genannten Zweck ist ohne ausdrückliche, schriftliche Zustimmung
+                    des jeweiligen Urhebers untersagt.
+                </div>
+                <b>Disclaimer</b>
+                <div>
+                    Die Nutzung der Website „www.pavingtools.at“ dient rein zur Information. Carola Tomasek
+                    übernimmt keine Gewähr für Aktualität, Vollständigkeit, oder Qualität der bereitgestellten
+                    Informationen. Eine Haftung für Schäden jeglicher Art, die aufgrund der Nutzung oder Nichtnutzung
+                    dargebotener Informationen bzw. durch Nutzung fehlerhafter oder unvollständiger Informationen
+                    verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens Carola Tomasek nachweislich
+                    kein Vorsatz oder grob fahrlässiges Verhalten vorliegt. Bei direkten oder indirekten Verweisen
+                    auf fremde Websites (Hyperlinks) trifft Carola Tomasek nur insofern eine Haftung, als Sie von
+                    rechtswidrigen Inhalten Kenntnis besitzt und es ihr technisch möglich und zumutbar ist, die
+                    Nutzung der rechtswidrigen Inhalte zu verhindern. Carola Tomasek erklärt, dass zum Zeitpunkt
+                    der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die
+                    aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/ verknüpften
+                    Seiten hat Carola Tomasek keinen Einfluss und distanziert sich daher ausdrücklich von dort
+                    dargestellten, allenfalls ungesetzlichen Inhalten. Dieser Haftungsausschluss (Disclaimer) ist
+                    als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde.
+                    Sofern Teile oder einzelne Formulierungen dieses Haftungsausschlusses der geltenden Rechtslage
+                    nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des
+                    Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -53,7 +145,7 @@
             </div>
             <div class="text">
                 <p>
-                    Unsere hochwertigen PFlasterwerkzeuge sind handgeschmiedet und speziell gehärtet.
+                    Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet.
                     Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend.
                     Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitive
                     und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir
@@ -137,7 +229,7 @@
         </div>
     </div>
 
-    <div id="contact">
+    <div id="contact_button">
         <h4 class="contact__text"><a id="contact__link">Kontakt</a></h4>
     </div>
 
