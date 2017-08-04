@@ -1,17 +1,15 @@
-#pavingtools {
-    background-image: url("../images/background_pflastermeister_1.jpg");
+#tools {
 
-    .logo__image {
-        background-image: url("../images/logo_pavingtools.svg");
-        background-size: 70%;
+    #tools_bg {
+        background-image: url("../images/background_pflastermeister_2.jpg");
     }
-}
 
-#pavingtools_hover {
-    background-image: url("../images/background_pflastermeister_1_hover.jpg");
+    #tools_bg_hover {
+        background-image: url("../images/background_pflastermeister_2_hover.jpg");
+        opacity: 0;
+    }
 
     .logo__image {
         background-image: url("../images/logo_pavingtools.svg");
-        background-size: 70%;
     }
 }

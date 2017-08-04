@@ -52,6 +52,44 @@ a {
     background-attachment: fixed;
 }
 
+.section {
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+
+    .section_background {
+        position: absolute;
+        width: 100vw;
+        height: 200vh;
+
+        top: 0;
+        right: 0;
+        left: 0;
+
+        z-index: -1;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .section_content {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 2;
+
+        &:nth-last-child(2) {
+            margin-top: -150px;
+        }
+    }
+
+
+}
+
+
 .logo {
     position: absolute;
     right: 10%;
@@ -63,7 +101,7 @@ a {
         margin: 0 10% 0 auto;
     }
 
-    z-index: 2;
+    z-index: 1;
 
     width: 150px;
     background-color: white;
@@ -158,6 +196,12 @@ a {
     }
 }
 
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
 
 

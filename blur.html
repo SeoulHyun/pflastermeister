@@ -17,15 +17,33 @@
                     triggerHook: 0.5,
                     duration: 500
                 })
-                    .on("enter", function () {
-                        // trigger animation by changing inline style.
-                        animateElem.style.backgroundImage = "url('assets/images/background_pflastermeister_1_hover.jpg')";
-                    })
                     .addIndicators({
                         name: "2 - change inline style"
                     }) // add indicators (requires plugin)
                     .setPin('#pavingtools_hover .content')
                     .addTo(controller);
+            });
+
+            var hover = $(this).children(1);
+
+            $(window).scroll(function () {
+                $('.section').each(function () {
+
+                    var scrollTop = $(window).scrollTop(),
+                        height = this.clientHeight,
+                        position = $(this).position().top,
+                        offset = (height / 5),
+                        calc = (((scrollTop - offset) % height) / height) * 10;
+                    if (scrollTop > position) {
+                        $(this).children(':nth-child(2)').css({'opacity': calc});
+                    }
+
+                    if (calc > '1') {
+                        $(this).children(':nth-child(2)').css({ 'opacity': 1 });
+                    } else if ( calc < '0' ) {
+                        $(this).children(':nth-child(2)').css({ 'opacity': 0 });
+                    }
+                })
             })
 
         </script>
@@ -41,125 +59,109 @@
                 height: 1000vh;
             }
 
-            #test {
-                height: 100vh;
-                width: 100vw;
+            h1 {
+                text-align: center;
+                background-color: orange;
+                font-size: 4em;
             }
 
-            #tools {
+            h2 {
+                text-align: left;
+                color: orange;
+                font-size: 3.5em;
+            }
+
+            .title {
+                position: relative;
+                top: 50%;
+            }
+
+            .section {
                 height: 200vh;
                 width: 100vw;
-                
-                background-image: url("assets/images/background_pflastermeister_1.jpg");
-                background-repeat: no-repeat;
+
+                position: relative;
+            }
+
+            .section_bg {
+                height: 200vh;
+                z-index: -1;
+
                 background-position: center;
+                background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
 
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
             }
 
-            #tools_hover {
-                position: absolute;
-                height: 100vh;
-                width: 100vw;
+            #s1_bg {
+                background-image: url("assets/images/background_trainings_2.jpg");
+            }
 
-                background-image: url("assets/images/background_pflastermeister_1_hover.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
+            #s1_bg_hover {
+                background-image: url("assets/images/background_trainings_2_hover.jpg");
 
                 opacity: 0;
             }
 
-            #trainings {
-                position: absolute;
-                height: 100vh;
+            .section1 {
                 width: 100vw;
+                height: 100vh;
 
-                background-image: url("assets/images/background_pflastermeister_1.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
+                z-index: 1;
             }
 
             .content {
-                width: 60vw;
-                margin: 0 auto;
+                width: 60%;
+                height: 80vh;
+
+                margin: 10vh auto;
             }
 
-            h1 {
-                background-color: #d6674d;
-                height: 50px;
-                text-align: center;
-                font-size: 3em;
+            #s2_bg {
+                background-image: url("assets/images/background_technology_2.jpg");
             }
 
-            #trigger {
-                position: absolute;
-                top: 90vh;
-                height: 10vh;
-                width: 100%;
-             }
+            #s2_bg_hover {
+                background-image: url("assets/images/background_technology_2_hover.jpg");
 
-            #pavingtools {
-                height: 100vh;
-                width: 100vw;
+                opacity: 0;
             }
-
-            #pavingtools_hover {
-                height: 100vh;
-                width: 100vw;
-            }
-
 
         </style>
     </head>
     <body>
-        <div id="tools">
-            <div id="pavingtools">
-                <div class="content">
-                    <h1>Tools</h1>
+
+        <div class="section">
+
+            <div class="section_bg" id="s1_bg" ></div>
+            <div class="section_bg" id="s1_bg_hover"></div>
+
+            <div class="section1" id="section1_text">
+                <div class="title">
+                    <h1>Tool</h1>
                 </div>
             </div>
-            <div id="trigger"></div>
-            <div id="pavingtools_hover">
+            <div class="section1" id="section1_text_hover">
                 <div class="content">
                     <h2>Tools</h2>
-                    <p>
-                    Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet.
-                    Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend.
-                    Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitive
-                    und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir
-                    so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker
-                    abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.
-                    </p>
+                    <p></p>
+                    <div class="main-button"><a>Weiter</a></div>
                 </div>
             </div>
+
         </div>
 
-        <!--<div id="everything">-->
-            <!--<div id="test">-->
-                <!--<div id="tools">-->
-                    <!--<h1>Tools</h1>-->
-                <!--</div>-->
-                <!--<div id="tools_hover">-->
-                    <!--<div class="content">-->
-                        <!--<h2>Tools</h2>-->
-                        <!--<p>-->
-                            <!--Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet.-->
-                            <!--Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend.-->
-                            <!--Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitive-->
-                            <!--und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir-->
-                            <!--so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker-->
-                            <!--abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.-->
-                        <!--</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="test2">-->
-                <!--<div id="trainings"></div>-->
-                <!--<div id="trainings_hover"></div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="section">
+
+            <div class="section_bg" id="s2_bg"></div>
+            <div class="section_bg" id="s2_bg_hover"></div>
+
+        </div>
+
     </body>
 </html>

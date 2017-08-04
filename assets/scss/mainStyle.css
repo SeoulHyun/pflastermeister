@@ -37,10 +37,34 @@ a {
   background-size: cover;
   background-attachment: fixed; }
 
+.section {
+  position: relative;
+  width: 100vw;
+  height: 200vh; }
+  .section .section_background {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+  .section .section_content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2; }
+    .section .section_content:nth-last-child(2) {
+      margin-top: -150px; }
+
 .logo {
   position: absolute;
   right: 10%;
-  z-index: 2;
+  z-index: 1;
   width: 150px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); }
@@ -102,43 +126,65 @@ a {
     #pflastermeister .title__text {
       color: white; }
 
-#pavingtools {
-  background-image: url("../images/background_pflastermeister_1.jpg"); }
-  #pavingtools .logo__image {
-    background-image: url("../images/logo_pavingtools.svg");
-    background-size: 70%; }
+#contact {
+  display: block;
+  background-color: #d6674d;
+  position: relative; }
+  #contact .logo {
+    position: absolute;
+    right: 10%; }
+  #contact #contact_content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0; }
+    #contact #contact_content .contact_wrapper {
+      width: 33%;
+      padding: 0 50px; }
+    #contact #contact_content .contact_form input {
+      height: 30px;
+      margin: 7.5px 0;
+      box-sizing: border-box;
+      width: 100%; }
+    #contact #contact_content .contact_form #city {
+      width: 100%; }
+      #contact #contact_content .contact_form #city input:nth-child(1) {
+        width: 30%;
+        margin-right: 15px; }
+      #contact #contact_content .contact_form #city input:nth-child(2) {
+        width: 70%; }
+    #contact #contact_content .contact_credits {
+      color: white;
+      border-right: 1px solid white;
+      border-left: 1px solid white; }
+    #contact #contact_content .contact_copyright {
+      color: white; }
+      #contact #contact_content .contact_copyright .small-text {
+        font-size: 0.1em;
+        margin: 15px 0; }
 
-#pavingtools_hover {
-  background-image: url("../images/background_pflastermeister_1_hover.jpg"); }
-  #pavingtools_hover .logo__image {
-    background-image: url("../images/logo_pavingtools.svg");
-    background-size: 70%; }
+#tools #tools_bg {
+  background-image: url("../images/background_pflastermeister_2.jpg"); }
+#tools #tools_bg_hover {
+  background-image: url("../images/background_pflastermeister_2_hover.jpg");
+  opacity: 0; }
+#tools .logo__image {
+  background-image: url("../images/logo_pavingtools.svg"); }
 
-#technology {
+#technology #technology_bg {
   background-image: url("../images/background_technology_2.jpg"); }
-  #technology .logo__image {
-    background-image: url("../images/logo_pflastermeister_1.svg"); }
+#technology #technology_bg_hover {
+  background-image: url("../images/background_technology_2_hover.jpg");
+  opacity: 0; }
+#technology .logo__image {
+  background-image: url("../images/logo_pflastermeister_1.svg"); }
 
-#technology_hover {
-  background-image: url("../images/background_technology_2_hover.jpg"); }
-  #technology_hover .logo__image {
-    background-image: url("../images/logo_training.svg");
-    background-size: 70%; }
-  #technology_hover .content {
-    display: block; }
-
-#skillstraining {
+#training #training_bg {
   background-image: url("../images/background_trainings_2.jpg"); }
-  #skillstraining .logo__image {
-    background-image: url("../images/logo_training.svg"); }
-
-#skillstraining_hover {
-  background-image: url("../images/background_trainings_2_hover.jpg"); }
-  #skillstraining_hover .logo__image {
-    background-image: url("../images/logo_training.svg");
-    background-size: 70%; }
-  #skillstraining_hover .content {
-    display: block; }
+#training #training_bg_hover {
+  background-image: url("../images/background_trainings_2_hover.jpg");
+  opacity: 0; }
+#training .logo__image {
+  background-image: url("../images/logo_training.svg"); }
 
 /* ======= CONTACT ========= */
 #contact_button {
@@ -152,5 +198,9 @@ a {
     #contact_button .contact__text a {
       color: #d6674d;
       text-decoration: none; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
 
 /*# sourceMappingURL=mainStyle.css.map */

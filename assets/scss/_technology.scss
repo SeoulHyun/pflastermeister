@@ -1,20 +1,15 @@
 #technology {
-    background-image: url("../images/background_technology_2.jpg");
+
+    #technology_bg {
+        background-image: url("../images/background_technology_2.jpg");
+    }
+
+    #technology_bg_hover {
+        background-image: url("../images/background_technology_2_hover.jpg");
+        opacity: 0;
+    }
 
     .logo__image {
         background-image: url("../images/logo_pflastermeister_1.svg");
-    }
-}
-
-#technology_hover {
-    background-image: url("../images/background_technology_2_hover.jpg");
-
-    .logo__image {
-        background-image: url("../images/logo_training.svg");
-        background-size: 70%;
-    }
-
-    .content {
-        display: block;
     }
 }

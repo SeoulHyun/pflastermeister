@@ -1,20 +1,15 @@
-#skillstraining {
-    background-image: url("../images/background_trainings_2.jpg");
+#training {
+
+    #training_bg {
+        background-image: url("../images/background_trainings_2.jpg");
+    }
+    
+    #training_bg_hover {
+        background-image: url("../images/background_trainings_2_hover.jpg");
+        opacity: 0;
+    }
 
     .logo__image {
         background-image: url("../images/logo_training.svg");
-    }
-}
-
-#skillstraining_hover {
-    background-image: url("../images/background_trainings_2_hover.jpg");
-
-    .logo__image {
-        background-image: url("../images/logo_training.svg");
-        background-size: 70%;
-    }
-
-    .content {
-        display: block;
     }
 }

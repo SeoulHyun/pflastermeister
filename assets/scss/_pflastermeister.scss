@@ -17,3 +17,64 @@
         }
     }
 }
+
+#contact {
+    display: block;
+    background-color: $orange;
+    position: relative;
+
+    .logo {
+        position: absolute;
+        right: 10%;
+    }
+
+    #contact_content {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+
+        .contact_wrapper {
+            width: 33%;
+            padding: 0 50px;
+        }
+
+        .contact_form {
+
+            input {
+                height: 30px;
+                margin: 7.5px 0;
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            #city {
+                width: 100%;
+
+                input:nth-child(1) {
+                    width: 30%;
+                    margin-right: 15px;
+                }
+
+                input:nth-child(2) {
+                    width: 70%;
+                }
+            }
+        }
+
+        .contact_credits {
+            color: white;
+
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+        }
+
+        .contact_copyright {
+            color: white;
+
+            .small-text {
+                font-size: 0.1em;
+                margin: 15px 0;
+            }
+        }
+    }
+}
