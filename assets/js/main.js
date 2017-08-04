@@ -23,15 +23,13 @@ $(document).ready(function () {
             var scrollTop = $(window).scrollTop(),
                 trainingTop = $(this).position().top,
                 trainingHeight = $(this).height(),
-                calc = 0;
-
-            console.log('scrollTop: ' + scrollTop);
-            console.log('trainingTop: ' + trainingTop);
-            console.log('trainingHeight: ' + trainingHeight);
+                calc = 0,
+                offset = trainingHeight / 8;
 
 
-            if (scrollTop > (trainingTop + trainingHeight / 4)) {
-                calc = ((scrollTop - (trainingTop + trainingHeight / 4)) / trainingHeight) * 15;
+
+            if (scrollTop > (trainingTop + offset)) {
+                calc = ((scrollTop - (trainingTop + offset)) / trainingHeight) * 10;
                 $(this).children(':nth-child(2)').css({'opacity': calc});
 
 

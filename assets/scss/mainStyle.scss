@@ -76,6 +76,7 @@ a {
 
     .section_content {
         position: relative;
+
         width: 100vw;
         height: 100vh;
 
@@ -83,6 +84,11 @@ a {
 
         &:nth-last-child(2) {
             margin-top: -150px;
+        }
+
+        &:nth-last-child(1) {
+            display: flex;
+            align-content: center;
         }
     }
 
@@ -195,8 +201,6 @@ a {
         }
     }
 }
-
-
 
 .flex-row {
     display: flex;

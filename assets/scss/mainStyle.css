@@ -60,6 +60,9 @@ a {
     z-index: 2; }
     .section .section_content:nth-last-child(2) {
       margin-top: -150px; }
+    .section .section_content:nth-last-child(1) {
+      display: flex;
+      align-content: center; }
 
 .logo {
   position: absolute;
