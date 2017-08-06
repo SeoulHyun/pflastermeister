@@ -133,7 +133,7 @@ a {
       text-align: center; }
 
 #pflastermeister {
-  background-image: url("../images/background_pflastermeister_2.jpg"); }
+  background-image: url("../images/background_pflastermeister.jpg"); }
   #pflastermeister .logo__image {
     background-image: url("../images/logo_pflastermeister_2.svg"); }
   #pflastermeister .title {
@@ -181,25 +181,25 @@ a {
         margin: 15px 0; }
 
 #tools #tools_bg {
-  background-image: url("../images/background_pflastermeister_2.jpg"); }
+  background-image: url("../images/background_tools.jpg"); }
 #tools #tools_bg_hover {
-  background-image: url("../images/background_pflastermeister_2_hover.jpg");
+  background-image: url("../images/background_tools_hover.jpg");
   opacity: 0; }
 #tools .logo__image {
   background-image: url("../images/logo_pavingtools.svg"); }
 
 #technology #technology_bg {
-  background-image: url("../images/background_technology_2.jpg"); }
+  background-image: url("../images/background_technology.jpg"); }
 #technology #technology_bg_hover {
-  background-image: url("../images/background_technology_2_hover.jpg");
+  background-image: url("../images/background_technology_hover.jpg");
   opacity: 0; }
 #technology .logo__image {
   background-image: url("../images/logo_pflastermeister_1.svg"); }
 
 #training #training_bg {
-  background-image: url("../images/background_trainings_2.jpg"); }
+  background-image: url("../images/background_trainings.jpg"); }
 #training #training_bg_hover {
-  background-image: url("../images/background_trainings_2_hover.jpg");
+  background-image: url("../images/background_trainings_hover.jpg");
   opacity: 0; }
 #training .logo__image {
   background-image: url("../images/logo_training.svg"); }
