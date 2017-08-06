@@ -16,7 +16,7 @@ $(document).ready(function () {
             .addTo(controller);
 
 
-    })
+    });
 
     $(window).scroll(function () {
 
@@ -44,4 +44,12 @@ $(document).ready(function () {
 
 
     })
-})
+
+    $('.contact_button').click(function () {
+        $('#tools_contact').toggle();
+        var text = $('.contact_button').text();
+        $('.contact_button').text(
+            text == 'Schließen' ? 'Kontakt' : 'Schließen'
+        )
+    })
+});

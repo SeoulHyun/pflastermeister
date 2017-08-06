@@ -85,8 +85,7 @@ a {
     }
 
     .section_content {
-        width: 100vw;
-
+        width: 70vw;
     }
 }
 
@@ -135,7 +134,7 @@ a {
     top: 50%;
 
     width: 100%;
-    background-color: $orange5;
+    background-color: $orange8;
     text-align: center;
 
     padding: 10px 0;
@@ -150,8 +149,8 @@ a {
 }
 
 .content {
-    width: 60%;
-    margin-left: 10%;
+    width: 80%;
+    margin: 0 auto;
 
     opacity: 0;
     transform: translateY(50px);
@@ -173,18 +172,28 @@ a {
     transform: translateY(0px);
 }
 
-.side-bar {
+.side_bar {
     position: fixed;
-    height: 100vh;
-    width: 25vw;
-    
+    display: none;
+    width: 30%;
+
     top: 0;
     right: 0;
     bottom: 0;
-    
-    z-index: 100;
-    
+
     background-color: $orange8;
+    z-index: 4;
+
+    .side_bar_content {
+        display: flex;
+        flex-direction: column;
+        margin: 200px 100px;
+
+        .side_bar_text {
+            color: white;
+            text-align: center;
+        }
+    }
 }
 
 @import 'pflastermeister';
@@ -193,22 +202,24 @@ a {
 @import 'trainings';
 
 /* ======= CONTACT ========= */
-#contact_button {
-    position: fixed;
+.contact_button {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     bottom: 0;
-    right: 100px;
-    padding: 15px 20px;
+    right: 10%;
+    text-transform: uppercase;
+    cursor: pointer;
 
     background-color: white;
+    color: $orange10;
 
-    .contact__text {
-        text-transform: uppercase;
-
-        a {
-            color: $orange10;
-            text-decoration: none;
-        }
-    }
+    z-index: 5;
 }
 
 .flex-row {

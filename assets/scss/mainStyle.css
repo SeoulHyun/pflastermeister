@@ -60,7 +60,7 @@ a {
     z-index: 2;
     margin-top: -150px; }
   .section .section_content {
-    width: 100vw; }
+    width: 70vw; }
 
 .logo {
   position: absolute;
@@ -92,15 +92,15 @@ a {
   position: relative;
   top: 50%;
   width: 100%;
-  background-color: rgba(214, 103, 77, 0.5);
+  background-color: rgba(214, 103, 77, 0.8);
   text-align: center;
   padding: 10px 0; }
   .title__text {
     color: white; }
 
 .content {
-  width: 60%;
-  margin-left: 10%;
+  width: 80%;
+  margin: 0 auto;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out; }
@@ -115,15 +115,22 @@ a {
   opacity: 1;
   transform: translateY(0px); }
 
-.side-bar {
+.side_bar {
   position: fixed;
-  height: 100vh;
-  width: 25vw;
+  display: none;
+  width: 30%;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
-  background-color: rgba(214, 103, 77, 0.8); }
+  background-color: rgba(214, 103, 77, 0.8);
+  z-index: 4; }
+  .side_bar .side_bar_content {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 100px; }
+    .side_bar .side_bar_content .side_bar_text {
+      color: white;
+      text-align: center; }
 
 #pflastermeister {
   background-image: url("../images/background_pflastermeister_2.jpg"); }
@@ -198,17 +205,20 @@ a {
   background-image: url("../images/logo_training.svg"); }
 
 /* ======= CONTACT ========= */
-#contact_button {
-  position: fixed;
+.contact_button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
-  right: 100px;
-  padding: 15px 20px;
-  background-color: white; }
-  #contact_button .contact__text {
-    text-transform: uppercase; }
-    #contact_button .contact__text a {
-      color: #d6674d;
-      text-decoration: none; }
+  right: 10%;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  color: #d6674d;
+  z-index: 5; }
 
 .flex-row {
   display: flex;
