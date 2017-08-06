@@ -46,10 +46,10 @@ $(document).ready(function () {
     })
 
     $('.contact_button').click(function () {
-        $('#tools_contact').toggle();
-        var text = $('.contact_button').text();
-        $('.contact_button').text(
-            text == 'Schließen' ? 'Kontakt' : 'Schließen'
-        )
+        $('#tools_contact').show("slow")
+    })
+
+    $('.side_bar_button').click(function () {
+        $('.side_bar').hide("slow");
     })
 });

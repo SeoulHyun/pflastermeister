@@ -43,7 +43,7 @@ a {
 /* ====== SECTIONS ======= */
 
 .wrapper {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     background-position: center;
@@ -81,11 +81,10 @@ a {
         height: 100vh;
 
         z-index: 2;
-        margin-top: -150px;
     }
 
     .section_content {
-        width: 70vw;
+        width: 100vw;
     }
 }
 
@@ -94,12 +93,12 @@ a {
     position: absolute;
     right: 10%;
 
-    @supports (position: sticky) or (position: -webkit-sticky) {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        margin: 0 5% 0 auto;
-    }
+    //@supports (position: sticky) or (position: -webkit-sticky) {
+    //    position: -webkit-sticky;
+    //    position: sticky;
+    //    top: 0;
+    //    margin: 0 5% 0 auto;
+    //}
 
     z-index: 5;
 
@@ -172,19 +171,39 @@ a {
     transform: translateY(0px);
 }
 
+/* ====== SIDE BAR ======== */
+
 .side_bar {
     position: fixed;
     display: none;
-    width: 30%;
 
     top: 0;
     right: 0;
     bottom: 0;
+    left: 0;
 
-    background-color: $orange8;
-    z-index: 4;
+    background-color: $orange10;
+    z-index: 10;
 
-    .side_bar_content {
+    &_logo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: white;
+
+        &_image {
+            background: no-repeat center;
+            background-size: 100%;
+
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &_content {
         display: flex;
         flex-direction: column;
         margin: 200px 100px;
@@ -192,6 +211,42 @@ a {
         .side_bar_text {
             color: white;
             text-align: center;
+        }
+
+        .side_bar_icons {
+
+
+            .icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            #icon1 {
+                background-image: url("../images/iconsammlung.eps");
+            }
+        }
+    }
+
+    &_button {
+        position: absolute;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        bottom: 0;
+        left: 50%;
+        margin-left: -100px;
+
+        background-color: white;
+        height: 50px;
+        width: 200px;
+
+        cursor: pointer;
+
+        &_text {
+            color: $orange10;
+            text-transform: uppercase;
         }
     }
 }

@@ -30,7 +30,7 @@ a {
 
 /* ====== SECTIONS ======= */
 .wrapper {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,10 +57,9 @@ a {
     position: relative;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
-    margin-top: -150px; }
+    z-index: 2; }
   .section .section_content {
-    width: 70vw; }
+    width: 100vw; }
 
 .logo {
   position: absolute;
@@ -69,12 +68,6 @@ a {
   width: 150px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); }
-  @supports (position: sticky) or (position: -webkit-sticky) {
-    .logo {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      margin: 0 5% 0 auto; } }
   .logo__image {
     height: 150px;
     background: no-repeat center;
@@ -115,22 +108,54 @@ a {
   opacity: 1;
   transform: translateY(0px); }
 
+/* ====== SIDE BAR ======== */
 .side_bar {
   position: fixed;
   display: none;
-  width: 30%;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(214, 103, 77, 0.8);
-  z-index: 4; }
-  .side_bar .side_bar_content {
+  left: 0;
+  background-color: #d6674d;
+  z-index: 10; }
+  .side_bar_logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white; }
+    .side_bar_logo_image {
+      background: no-repeat center;
+      background-size: 100%;
+      transition: all 0.3s; }
+      .side_bar_logo_image:hover {
+        transform: scale(1.1); }
+  .side_bar_content {
     display: flex;
     flex-direction: column;
     margin: 200px 100px; }
-    .side_bar .side_bar_content .side_bar_text {
+    .side_bar_content .side_bar_text {
       color: white;
       text-align: center; }
+    .side_bar_content .side_bar_icons .icon {
+      height: 50px;
+      width: 50px; }
+    .side_bar_content .side_bar_icons #icon1 {
+      background-image: url("../images/iconsammlung.eps"); }
+  .side_bar_button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 50%;
+    margin-left: -100px;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    cursor: pointer; }
+    .side_bar_button_text {
+      color: #d6674d;
+      text-transform: uppercase; }
 
 #pflastermeister {
   background-image: url("../images/background_pflastermeister.jpg"); }
