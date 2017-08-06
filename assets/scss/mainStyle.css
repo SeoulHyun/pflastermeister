@@ -40,11 +40,11 @@ a {
 .section {
   position: relative;
   width: 100vw;
-  height: 200vh; }
+  padding-bottom: 15vh; }
   .section .section_background {
     position: absolute;
     width: 100vw;
-    height: 200vh;
+    height: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -53,21 +53,19 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; }
-  .section .section_content {
+  .section .section_header {
     position: relative;
     width: 100vw;
     height: 100vh;
-    z-index: 2; }
-    .section .section_content:nth-last-child(2) {
-      margin-top: -150px; }
-    .section .section_content:nth-last-child(1) {
-      display: flex;
-      align-content: center; }
+    z-index: 2;
+    margin-top: -150px; }
+  .section .section_content {
+    width: 100vw; }
 
 .logo {
   position: absolute;
   right: 10%;
-  z-index: 1;
+  z-index: 5;
   width: 150px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); }
@@ -76,7 +74,7 @@ a {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
-      margin: 0 10% 0 auto; } }
+      margin: 0 5% 0 auto; } }
   .logo__image {
     height: 150px;
     background: no-repeat center;
@@ -101,7 +99,7 @@ a {
     color: white; }
 
 .content {
-  width: 50%;
+  width: 60%;
   margin-left: 10%;
   opacity: 0;
   transform: translateY(50px);
@@ -116,6 +114,16 @@ a {
 .content.fade-in {
   opacity: 1;
   transform: translateY(0px); }
+
+.side-bar {
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(214, 103, 77, 0.8); }
 
 #pflastermeister {
   background-image: url("../images/background_pflastermeister_2.jpg"); }

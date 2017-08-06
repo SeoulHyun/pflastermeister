@@ -19,6 +19,7 @@ $(document).ready(function () {
     })
 
     $(window).scroll(function () {
+
         $('.section').each(function () {
             var scrollTop = $(window).scrollTop(),
                 trainingTop = $(this).position().top,
