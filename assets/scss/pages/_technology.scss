@@ -1,0 +1,14 @@
+@import '../helpers/functions';
+
+#technology {
+
+    .section__background {
+        background-image: image("background_technology.jpg");
+    }
+
+    .section__background--blur {
+        background-image: image("background_technology_hover.jpg");
+        opacity: 0;
+    }
+
+}

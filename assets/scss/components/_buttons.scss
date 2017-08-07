@@ -1,0 +1,36 @@
+/* ===== buttons ===== */
+
+@import '../helpers/mixins';
+
+.button {
+    border: none;
+    margin: 0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    z-index: 10;
+
+    @include box-shadow(0, 4px, 8px, 0, rgba(0,0,0,0.3));
+}
+
+.button--white {
+    @extend .button;
+    background-color: white;
+    color: $orange10;
+}
+
+.button--orange {
+    @extend .button;
+    background-color: $orange10;
+    color: white;
+}
+
+.button--contact {
+    @extend .button--white;
+    width: 150px;
+}
+

@@ -8,63 +8,19 @@
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script type="text/javascript" src="assets/js/parallax.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <script>
-//        $(window).scroll(function () {
-//
-//            var toolsPos = $("#pavingtools_hover").position().top,
-//                currScrollPos = $(window).scrollTop();
-//
-//            if (currScrollPos > toolsPos-500) {
-//                $('#pavingtools_hover .content').fadeIn(1500);
-//            }
-//        });
-    </script>
-
-    <link rel="stylesheet" href="assets/scss/mainStyle.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- -------------- CONTACT SIDE BARS -------------- -->
 
-    <div class="side_bar" id="tools_contact">
-        <div class="side_bar_logo">
-            <div class="side_bar_logo_image"><a class="side_bar_logo_link" href="#"></a></div>
-        </div>
-
-        <div class="side_bar_content">
-
-            <div class="side_bar_text">
-                <p>
-                    <b>Pavingtools.at</b><br>
-                    Carola Tomasek<br>
-                    Hochrain 16<br>
-                    4842 Zell am Pettenfirst<br>
-                </p>
-                <p>
-                    0043 (0) 699 1000 72 18<br>
-                    info@pavingtools.at<br>
-                    www.pavingtools.at<br>
-                </p>
-            </div>
-
-            <div class="side_bar_icons">
-                <div class="icon" id="icon1"></div>
-                <div class="icon" id="icon2"></div>
-                <div class="icon" id="icon3"></div>
-            </div>
-        </div>
-
-        <div class="side_bar_button">
-            <div class="side_bar_button_text">Schließen</div>
-        </div>
-    </div>
-
-    <div id="pflastermeister" class="wrapper">
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+    <div id="pflastermeister">
+        <div class="section__logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image" src="assets/images/logo_pflastermeister_2.svg">
+            </a>
         </div>
 
         <div class="title">
@@ -72,7 +28,7 @@
         </div>
     </div>
 
-    <div id="contact">
+    <!-- <div id="contact">
         <div class="logo">
             <div class="logo__image"><a class="logo__link" href="#"></a></div>
         </div>
@@ -176,35 +132,43 @@
 
     <div class="section" id="tools">
 
-        <div class="section_background" id="tools_bg"></div>
-        <div class="section_background" id="tools_bg_hover"></div>
+        <div class="section__background"></div>
+        <div class="section__background--blur"></div>
 
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+        <div class="section__logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image" src="assets/images/logo_pavingtools.svg">
+            </a>
         </div>
 
-        <div class="section_header" id="tools_content">
+        <div class="section__header">
             <div class="title">
                 <h1 class="title__text">Tools</h1>
             </div>
         </div>
 
-        <div class="section_content" id="tools_content_hover">
+        <div class="section__content">
+
             <div class="content">
-                <div class="header">
+                <div class="content__header">
                     <h1>Tools</h1>
                 </div>
-                <div class="text">
+                <div class="content__text">
                     <p>
                         Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet. Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend. Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitative und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.
                     </p>
                 </div>
-                <div class="main_button"><a href="#">Weiter zu Pavingtools</a></div>
+                <div class="content__button">
+                    <a href="#" class="button--orange">Weiter zu Pavingtools</a>
+                </div>
             </div>
+
         </div>
 
-        <div class="contact_button" id="tools_contact">
-            <h4 class="contact__text">Kontakt</h4>
+        <div class="section__button">
+            <button class="button--contact">
+                <h4 class="button__text">Kontakt</h4>
+            </button>
         </div>
 
     </div>
@@ -213,25 +177,27 @@
 
     <div class="section" id="training">
 
-        <div class="section_background" id="training_bg"></div>
-        <div class="section_background" id="training_bg_hover"></div>
+        <div class="section__background"></div>
+        <div class="section__background--blur"></div>
 
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+        <div class="section__logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image" src="assets/images/logo_training.svg">
+            </a>
         </div>
 
-        <div class="section_header" id="training_content">
+        <div class="section__header">
             <div class="title">
                 <h1 class="title__text">Trainings</h1>
             </div>
         </div>
 
-        <div class="section_content" id="training_content_hover">
+        <div class="section__content">
             <div class="content">
-                <div class="header">
+                <div class="content__header">
                     <h1>Trainings</h1>
                 </div>
-                <div class="text">
+                <div class="content__text">
                     <p>
                         Wir lieben es, mit Menschen zu arbeiten und unser Wissen weiterzugeben.
                         Mit Begeisterung, viel Freude und Spaß lernst du neue Dinge zu einem
@@ -245,12 +211,16 @@
                         wir uns freuen, dich bei uns zu begrüßen.
                     </p>
                 </div>
-                <div class="main_button"><a href="#">Weiter zu Skillstrainings</a></div>
+                <div class="content__button">
+                    <a href="#" class="button--orange">Weiter zu Skillstrainings</a>
+                </div>
             </div>
         </div>
 
-        <div class="contact_button" id="training_contact">
-            <h4 class="contact__text">Kontakt</h4>
+        <div class="section__button">
+            <button class="button--contact">
+                <h4 class="button__text">Kontakt</h4>
+            </button>
         </div>
 
     </div>
@@ -259,25 +229,27 @@
 
     <div class="section" id="technology">
 
-        <div class="section_background" id="technology_bg"></div>
-        <div class="section_background" id="technology_bg_hover"></div>
+        <div class="section__background"></div>
+        <div class="section__background--blur"></div>
 
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+        <div class="section__logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image" src="assets/images/logo_pflastermeister_1.svg">
+            </a>
         </div>
 
-        <div class="section_header" id="technology_content">
+        <div class="section__header">
             <div class="title">
                 <h1 class="title__text">Technology</h1>
             </div>
         </div>
 
-        <div class="section_content" id="technology_content_hover">
+        <div class="section__content">
             <div class="content">
-                <div class="header">
+                <div class="content__header">
                     <h1>Technology</h1>
                 </div>
-                <div class="text">
+                <div class="content__text">
                     <p>
                         Fragst Du dich gelegentlich, ob früher alles anders war und ob die Produkte
                         einfacher in der Handhabung waren? Auch wenn sich manches geändert hat, ist
@@ -289,12 +261,16 @@
                         können wir unsere Produkte so einfach und anwenderfreundlich wie möglich machen?“
                     </p>
                 </div>
-                <div class="main_button"><a href="#">Weiter zu den Mörtellösungen</a></div>
+                <div class="content__button">
+                    <a href="#" class="button--orange">Weiter zu den Mörtellösungen</a>
+                </div>
             </div>
         </div>
 
-        <div class="contact_button" id="technology_contact">
-            <h4 class="contact__text">Kontakt</h4>
+        <div class="section__button">
+            <button class="button--contact">
+                <h4 class="button__text">Kontakt</h4>
+            </button>
         </div>
 
     </div>

@@ -2,22 +2,22 @@ $(document).ready(function () {
 
     var controller = new ScrollMagic.Controller();
 
-    $('.section_content').each(function () {
+    $('.content').each(function () {
 
         console.log(this);
 
         var myScene = new ScrollMagic.Scene({
             triggerElement: this,
+            triggerHook: 0.8
         })
-            .setClassToggle(this.children[0], 'fade-in') // add class to #content
+            .setClassToggle(this, 'content--fade-in')
             // .addIndicators({
             //     name: "2 - change inline style"
             // }) // add indicators (requires plugin)
             .addTo(controller);
-
-
     });
 
+    // ====== background blur ====== //
     $(window).scroll(function () {
 
         $('.section').each(function () {
@@ -25,7 +25,7 @@ $(document).ready(function () {
                 trainingTop = $(this).position().top,
                 trainingHeight = $(this).height(),
                 calc = 0,
-                offset = trainingHeight / 8;
+                offset = trainingHeight / 100;
 
 
 
@@ -39,6 +39,8 @@ $(document).ready(function () {
                 } else if ( calc < '0' ) {
                     $(this).children(':nth-child(2)').css({ 'opacity': 0 });
                 }
+            } else {
+                $(this).children(':nth-child(2)').css({ 'opacity': 0 });
             }
         })
 

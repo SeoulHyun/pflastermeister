@@ -1,0 +1,26 @@
+/* ===== content ===== */
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.content__header {
+    color: $orange10;
+}
+
+.content__text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 2em 0;
+}
+
+div.content.content--fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
