@@ -1,330 +1,134 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pflastermeister</title>
 
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script type="text/javascript" src="assets/js/parallax.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="assets/scss/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    <!-- ScrollMagic -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+    <link rel="stylesheet" href="scss/mainStyle.css">
+    <script src="js/animation.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 </head>
 <body>
 
-    <div id="pflastermeister">
-        <div class="section__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__image" src="assets/images/logo_pflastermeister_2.svg">
-            </a>
+    <div id="pflastermeister" class="col-12">
+        <div class="background col-12">
         </div>
 
-        <div class="title">
+        <div class="logo col-md-2 col-md-push-9">
+            <img class="logo__image" src="images/logo_pflastermeister_2.svg"/>
+        </div>
+
+        <div class="title col-12">
             <h1 class="title__text">Alles rund um das Pflasterhandwerk</h1>
         </div>
+    </div>
 
-        <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
+    <div id="pavingtools" class="col-12">
+        <div class="background__blur col-12">
+        </div>
+
+        <div class="background col-12">
+        </div>
+
+        <div class="logo col-md-2 col-md-push-9">
+            <img class="logo__image" src="images/logo_pavingtools.svg"/>
+        </div>
+
+        <div class="title col-12">
+            <h1 class="title__text">Tools</h1>
+        </div>
+
+        <div class="content col-10 col-push-1 col-md-5 col-md-push-1">
+            <div>
+                <h3 class="content__title">Tools</h3>
+                <p class="content__text">Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet. Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend. Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitative und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.</p>
+            </div>
         </div>
     </div>
 
-    <!-- <div id="contact">
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+    <div id="skillstraining" class="col-12">
+        <div class="background__blur col-12">
         </div>
 
-        <div id="contact_content">
+        <div class="background col-12">
+        </div>
 
-            <div class="contact_form contact_wrapper">
-                <h2>Kontakt</h2>
+        <div class="logo col-md-2 col-md-push-9">
+            <img class="logo__image" src="images/logo_training.svg"/>
+        </div>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Anrede">
-                    <input type="text" name="" id="" placeholder="Vorname">
-                    <input type="text" name="" id="" placeholder="Nachname">
-                    <input type="text" name="" id="" placeholder="Firma">
-                    <input type="text" name="" id="" placeholder="Adresse">
+        <div class="title col-12">
+            <h1 class="title__text">Trainings</h1>
+        </div>
 
-                    <div id="city" class="flex-row">
-                        <input type="text" name="" id="" placeholder="PLZ">
-                        <input type="text" name="" id="" placeholder="Ort">
-                    </div>
-
-                    <input type="text" name="" id="" placeholder="Land">
-                    <input type="textarea" placeholder="Ihre Nachricht">
-                </form>
+        <div class="content col-10 col-push-1 col-md-5 col-md-push-1">
+            <div>
+                <h3 class="content__title">Trainings</h3>
+                <p class="content__text">Wir lieben es, mit Menschen zu arbeiten und unser Wissen weiterzugeben.
+                    Mit Begeisterung, viel Freude und Spaß lernst du neue Dinge zu einem
+                    alten Handwerk. Es gilt, die Tradition und das Handwerk zu bewahren und
+                    auch neue Techniken mit einzubinden. Vom klassischen Handwerk bis zur
+                    High-End-Schulung, von der Absteckung mit Schnur und Nagel bis zur GPS
+                    Vermessung – alles aus einer Hand von Profis für Profis. Dein Handwerk
+                    ist mehr als nur die manuelle Arbeit. Neben dem Wissen über das Handwerk
+                    gibt es noch viel mehr. Kommunikation, Führung und Selbstmanagement sind
+                    heute wichtiger denn je. Finde die richtige Seminarlösung für dich, weil
+                    wir uns freuen, dich bei uns zu begrüßen.</p>
             </div>
-            <div class="contact_credits contact_wrapper">
-                <h2>Impressum</h2>
-                <p>
-                    <strong>Betreiber / Verantwortlicher für den Inhalt</strong><br>
-                    Carola Tomasek <br>
-                    Hochrain 16 <br>
-                    4842 Zell am Pettenfirst
-                </p>
-                <p>
-                    Telefon: 0043 (0) 699 1000 72 18 <br>
-                    info@pavingtools.at <br>
-                    http://www.pavingtools.at
-                </p>
-                <p>
-                    <b>Gewerberegisternummer</b> <br>
-                    417/24448
-                </p>
-                <p>
-                    <b>Gerichtsstand</b> <br>
-                    Bezirksgericht Vöcklabruck
-                </p>
-                <p>
-                    <b>Kammer</b> <br>
-                    Wirtschaftskammer Oberösterreich
-                </p>
-                <p>
-                    <b>Umsatzsteuer-Identifikationsnummer</b> <br>
-                    ATU67305114
-                </p>
-                <p>
-                    <b>Behörde gemäß §55ECG</b> <br>
-                    Bezirkshauptmannschaft Vöcklabruck
-                </p>
-                <p>
-                    <b>Eintrag bei WK Österreich</b><br>
-                    Firmen A-Z
-                </p>
-            </div>
-            <div class="contact_copyright contact_wrapper">
-                <b>Copyright</b>
-                <div class="small-text">
-                    Inhalt, Struktur und Layout der Website „www.pavingtools.at“ sind urheberrechtlich
-                    geschützt. Urheberrechte für Bildmaterial, Texte und andere geschützte Werke, Marken
-                    und Kennzeichen werden dadurch nicht beschnitten. Die Vervielfältigung (inklusive des
-                    Ausdrucks auf Papier) oder die Verwendung der Website bzw. Teilen davon zu Informationszwecken
-                    ist gestattet. Jede andere Verwendung der auf dieser Website verfügbaren Inhalte zu
-                    einem anderen als dem oben genannten Zweck ist ohne ausdrückliche, schriftliche Zustimmung
-                    des jeweiligen Urhebers untersagt.
-                </div>
-                <b>Disclaimer</b>
-                <div class="small-text">
-                    Die Nutzung der Website „www.pavingtools.at“ dient rein zur Information. Carola Tomasek
-                    übernimmt keine Gewähr für Aktualität, Vollständigkeit, oder Qualität der bereitgestellten
-                    Informationen. Eine Haftung für Schäden jeglicher Art, die aufgrund der Nutzung oder Nichtnutzung
-                    dargebotener Informationen bzw. durch Nutzung fehlerhafter oder unvollständiger Informationen
-                    verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens Carola Tomasek nachweislich
-                    kein Vorsatz oder grob fahrlässiges Verhalten vorliegt. Bei direkten oder indirekten Verweisen
-                    auf fremde Websites (Hyperlinks) trifft Carola Tomasek nur insofern eine Haftung, als Sie von
-                    rechtswidrigen Inhalten Kenntnis besitzt und es ihr technisch möglich und zumutbar ist, die
-                    Nutzung der rechtswidrigen Inhalte zu verhindern. Carola Tomasek erklärt, dass zum Zeitpunkt
-                    der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die
-                    aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/ verknüpften
-                    Seiten hat Carola Tomasek keinen Einfluss und distanziert sich daher ausdrücklich von dort
-                    dargestellten, allenfalls ungesetzlichen Inhalten. Dieser Haftungsausschluss (Disclaimer) ist
-                    als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde.
-                    Sofern Teile oder einzelne Formulierungen dieses Haftungsausschlusses der geltenden Rechtslage
-                    nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des
-                    Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
-                </div>
-            </div>
-            
         </div>
     </div>
 
-    <!-- -------------- TOOLS -------------- -->
-
-    <div class="section" id="tools">
-
-        <div class="section__background"></div>
-        <div class="section__background--blur"></div>
-
-        <div class="section__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__image" src="assets/images/logo_pavingtools.svg">
-            </a>
+    <div id="technology">
+        <div class="background__blur col-12">
         </div>
 
-        <div class="section__header">
-            <div class="title">
-                <h1 class="title__text">Tools</h1>
+        <div class="background col-12">
+        </div>
+
+        <div class="logo col-md-2 col-md-push-9">
+            <img class="logo__image" src="images/logo_pflastermeister_2.svg">
+        </div>
+
+        <div class="title col-12">
+            <h1 class="title__text">Technology</h1>
+        </div>
+
+        <div class="content col-10 col-push-1 col-md-5 col-md-push-1">
+            <div>
+                <h3 class="content__title">Technology</h3>
+                <p class="content__text">Fragst Du dich gelegentlich, ob früher alles anders war und ob die Produkte
+                    einfacher in der Handhabung waren? Auch wenn sich manches geändert hat, ist
+                    vieles doch gleich geblieben. Komplexere Anforderungen verlangen komplexere
+                    Lösungen. Das wird zumindest behauptet. Unsere Erfahrung zeigt, dass komplexere
+                    Lösungen oftmals an den Menschen scheitern, die sie umsetzen sollen. In der
+                    Entwicklung der PFLASTERMEISTER Produkte haben wir uns einzig und allein die
+                    Frage nach der leichten Anwendbarkeit und Praxistauglichkeit gestellt: „Wie
+                    können wir unsere Produkte so einfach und anwenderfreundlich wie möglich machen?“</p>
             </div>
         </div>
-
-        <div class="section__content">
-
-            <div class="content">
-                <div class="content__header">
-                    <h1>Tools</h1>
-                </div>
-                <div class="content__text">
-                    <p>
-                        Unsere hochwertigen Pflasterwerkzeuge sind handgeschmiedet und speziell gehärtet. Der richtige Stahl, der Härtegrad und die Form der Werkzeuge sind entscheidend. Nur mit entsprechenden Werkzeugen sind Sie in der Lage, eine hervorragende quantitative und qualitative Leistung zu erbringen. Aus unserem täglichen Tun heraus haben wir so die besten Pflasterwerkzeuge konzipiert und auf die Bedürfnisse der Handwerker abgestimmt. Wir setzen einen neuen Qualitätsstandard! Überzeugen Sie sich selbst.
-                    </p>
-                </div>
-                <div class="content__button">
-                    <a href="#" class="button--orange">Weiter zu Pavingtools</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
-        </div>
-
     </div>
 
-    <!-- -------------- TRAINING -------------- -->
-
-    <div class="section" id="training">
-
-        <div class="section__background"></div>
-        <div class="section__background--blur"></div>
-
-        <div class="section__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__image" src="assets/images/logo_training.svg">
-            </a>
-        </div>
-
-        <div class="section__header">
-            <div class="title">
-                <h1 class="title__text">Trainings</h1>
-            </div>
-        </div>
-
-        <div class="section__content">
-            <div class="content">
-                <div class="content__header">
-                    <h1>Trainings</h1>
-                </div>
-                <div class="content__text">
-                    <p>
-                        Wir lieben es, mit Menschen zu arbeiten und unser Wissen weiterzugeben.
-                        Mit Begeisterung, viel Freude und Spaß lernst du neue Dinge zu einem
-                        alten Handwerk. Es gilt, die Tradition und das Handwerk zu bewahren und
-                        auch neue Techniken mit einzubinden. Vom klassischen Handwerk bis zur
-                        High-End-Schulung, von der Absteckung mit Schnur und Nagel bis zur GPS
-                        Vermessung – alles aus einer Hand von Profis für Profis. Dein Handwerk
-                        ist mehr als nur die manuelle Arbeit. Neben dem Wissen über das Handwerk
-                        gibt es noch viel mehr. Kommunikation, Führung und Selbstmanagement sind
-                        heute wichtiger denn je. Finde die richtige Seminarlösung für dich, weil
-                        wir uns freuen, dich bei uns zu begrüßen.
-                    </p>
-                </div>
-                <div class="content__button">
-                    <a href="#" class="button--orange">Weiter zu Skillstrainings</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
-        </div>
-
+    <div id="contact" class="col-md-2 col-md-push-9">
+        <h4 class="contact__text"><a id="contact__link">Kontakt</a></h4>
     </div>
-
-    <!-- -------------- TECHNOLOGY -------------- -->
-
-    <div class="section" id="technology">
-
-        <div class="section__background"></div>
-        <div class="section__background--blur"></div>
-
-        <div class="section__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__image" src="assets/images/logo_pflastermeister_1.svg">
-            </a>
-        </div>
-
-        <div class="section__header">
-            <div class="title">
-                <h1 class="title__text">Technology</h1>
-            </div>
-        </div>
-
-        <div class="section__content">
-            <div class="content">
-                <div class="content__header">
-                    <h1>Technology</h1>
-                </div>
-                <div class="content__text">
-                    <p>
-                        Fragst Du dich gelegentlich, ob früher alles anders war und ob die Produkte
-                        einfacher in der Handhabung waren? Auch wenn sich manches geändert hat, ist
-                        vieles doch gleich geblieben. Komplexere Anforderungen verlangen komplexere
-                        Lösungen. Das wird zumindest behauptet. Unsere Erfahrung zeigt, dass komplexere
-                        Lösungen oftmals an den Menschen scheitern, die sie umsetzen sollen. In der
-                        Entwicklung der PFLASTERMEISTER Produkte haben wir uns einzig und allein die
-                        Frage nach der leichten Anwendbarkeit und Praxistauglichkeit gestellt: „Wie
-                        können wir unsere Produkte so einfach und anwenderfreundlich wie möglich machen?“
-                    </p>
-                </div>
-                <div class="content__button">
-                    <a href="#" class="button--orange">Weiter zu den Mörtellösungen</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
-        </div>
-
-    </div>
-
-    <!-- ------------------------------------- -->
-
-    <div class="contact--side">
-
-        <div class="contact__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__image" src="assets/images/logo_pavingtools.svg">
-            </a>
-        </div>
-
-        <div class="contact__infos">
-            <p>
-                <span class="company-name"></span><br>
-                Carola Tomasek<br>
-                Hochrain 16<br>
-                4842 Zell am Pettenfirst
-            </p>
-            <p>
-                0043 (0) 699 1000 72 18<br>
-                info@<span class="company-name"></span><br>
-                www.<span class="company-name"></span>
-            </p>
-        </div>
-
-        <div class="contact__icons">
-            <div class="icon--big"></div>
-            <div class="icon--big"></div>
-            <div class="icon--big"></div>
-        </div>
-
-        <div class="contact__icons">
-            <div class="icon--small"></div>
-            <div class="icon--small"></div>
-        </div>
-
-        <div class="contact__close">
-            <button class="button--white"><h4>Schließen</h4></button>
-        </div>
-
-    </div>
-
-
-    
-    
 
 </body>
 </html>

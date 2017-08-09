@@ -1,0 +1,281 @@
+@import 'colors';
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+#pflastermeister {
+    height: 100vh;
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_pflastermeister_2.jpg");
+    }
+
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+    .title {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 80px;
+            background: $textBg;
+            color: white;
+        }
+    }
+    .content {
+        position: absolute;
+    }
+}
+
+#pavingtools {
+    height: 100vh;
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_pflastermeister_1.jpg");
+    }
+    .background__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_pflastermeister_1_blur.jpg");
+    }
+
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+
+    .title {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 80px;
+            background: $textBg;
+            color: white;
+        }
+    }
+    .content {
+        position: absolute;
+        opacity: 0;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+
+        &__title {
+            color: $orange;
+            font-weight: bold;
+            font-size: 72px;
+        }
+        &__text {
+
+        }
+
+    }
+}
+
+
+#skillstraining {
+    height: 100vh;
+
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_trainings_2.jpg");
+    }
+
+    .background__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_trainings_2_blur.jpg");
+    }
+
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+
+    .title {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 80px;
+            background: $textBg;
+            color: white;
+        }
+    }
+    .content {
+        position: absolute;
+        opacity: 0;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+
+        &__title {
+            color: $orange;
+            font-weight: bold;
+            font-size: 72px;
+        }
+        &__text {
+
+        }
+
+    }
+}
+
+
+#technology {
+    height: 100vh;
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_technology_2.jpg");
+    }
+
+    .background__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/background_technology_blur.jpg");
+    }
+
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+
+    .title {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 80px;
+            background: $textBg;
+            color: white;
+        }
+    }
+    .content {
+        position: absolute;
+        opacity: 0;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+
+        &__title {
+            color: $orange;
+            font-weight: bold;
+            font-size: 72px;
+        }
+        &__text {
+
+        }
+
+    }
+}
+
+#contact {
+    position: fixed;
+    bottom: 0;
+    padding: 15px 20px;
+    background-color: white;
+    text-align: center;
+
+    .contact__text {
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

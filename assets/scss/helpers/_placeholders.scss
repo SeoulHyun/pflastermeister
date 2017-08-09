@@ -1,9 +1,0 @@
-%background--responsive {
-    background-size: cover;
-    background: white no-repeat center;
-}
-
-%background--fixed {
-    @extend %background--responsive;
-    background-attachment: fixed;
-}

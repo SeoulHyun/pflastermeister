@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+#pflastermeister {
+  height: 100vh;
+  position: relative; }
+  #pflastermeister .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_pflastermeister_2.jpg"); }
+  #pflastermeister .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white; }
+  #pflastermeister .title {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute; }
+    #pflastermeister .title__text {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 80px;
+      background: rgba(238, 87, 39, 0.55);
+      color: white; }
+  #pflastermeister .content {
+    position: absolute; }
+
+#pavingtools {
+  height: 100vh;
+  position: relative; }
+  #pavingtools .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_pflastermeister_1.jpg"); }
+  #pavingtools .background__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_pflastermeister_1_blur.jpg"); }
+  #pavingtools .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white; }
+  #pavingtools .title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute; }
+    #pavingtools .title__text {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 80px;
+      background: rgba(238, 87, 39, 0.55);
+      color: white; }
+  #pavingtools .content {
+    position: absolute;
+    opacity: 0;
+    height: 60%;
+    display: flex;
+    align-items: flex-end; }
+    #pavingtools .content__title {
+      color: #d6674d;
+      font-weight: bold;
+      font-size: 72px; }
+
+#skillstraining {
+  height: 100vh;
+  position: relative; }
+  #skillstraining .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_trainings_2.jpg"); }
+  #skillstraining .background__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_trainings_2_blur.jpg"); }
+  #skillstraining .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white; }
+  #skillstraining .title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute; }
+    #skillstraining .title__text {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 80px;
+      background: rgba(238, 87, 39, 0.55);
+      color: white; }
+  #skillstraining .content {
+    position: absolute;
+    opacity: 0;
+    height: 60%;
+    display: flex;
+    align-items: flex-end; }
+    #skillstraining .content__title {
+      color: #d6674d;
+      font-weight: bold;
+      font-size: 72px; }
+
+#technology {
+  height: 100vh;
+  position: relative; }
+  #technology .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_technology_2.jpg"); }
+  #technology .background__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background_technology_blur.jpg"); }
+  #technology .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white; }
+  #technology .title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute; }
+    #technology .title__text {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 80px;
+      background: rgba(238, 87, 39, 0.55);
+      color: white; }
+  #technology .content {
+    position: absolute;
+    opacity: 0;
+    height: 60%;
+    display: flex;
+    align-items: flex-end; }
+    #technology .content__title {
+      color: #d6674d;
+      font-weight: bold;
+      font-size: 72px; }
+
+#contact {
+  position: fixed;
+  bottom: 0;
+  padding: 15px 20px;
+  background-color: white;
+  text-align: center; }
+  #contact .contact__text {
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=mainStyle.css.map */
