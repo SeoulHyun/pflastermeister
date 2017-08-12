@@ -186,4 +186,11 @@ h1, h2, h3, h4, h5, h6 {
   #contact .contact__text {
     text-transform: uppercase; }
 
+#contactFullWidth {
+  height: 100vh; }
+  #contactFullWidth .kontakt {
+    height: 100vh; }
+  #contactFullWidth .impressum {
+    height: 100vh; }
+
 /*# sourceMappingURL=mainStyle.css.map */
