@@ -1,13 +1,13 @@
 /* ===== contact-main ===== */
 
-@import 'assets/scss/base/colors';
-@import 'assets/scss/base/breakpoints';
-@import 'assets/scss/helpers/mixins';
+@import '../base/colors';
+@import '../base/breakpoints';
+@import '../helpers/mixins';
 
-#contact {
+#contact-bootstrap {
     background-color: $orange10;
     position: relative;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .contact__logo {
@@ -16,6 +16,7 @@
     height: 150px;
     background-color: white;
     right: 10vw;
+    z-index: 10;
 }
 
 .contact__section {
@@ -25,7 +26,7 @@
     &:last-child  {
 
         @media (min-width: 992px) {
-            padding-top: 200px;
+            margin-top: 200px;
         }
 
 
@@ -46,7 +47,6 @@
 //        }
 //    }
 }
-
 
 .contact__back {
     position: absolute;
