@@ -1,6 +1,12 @@
+/* ===== contact-side ===== */
+
+@import '../base/colors';
+@import '../base/breakpoints';
+@import '../helpers/mixins';
+
 .contact--side {
     position: fixed;
-    display: flex;
+    display: none; // change to flex
     flex-direction: column;
     justify-content: space-between;
 
@@ -11,52 +17,57 @@
 
     background-color: $orange10;
     z-index: 15;
-}
 
-.contact__logo {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    margin: 0 auto;
-    display: block;
-}
+    .contact__logo {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        margin: 0 auto;
+        display: block;
+    }
 
-.contact__infos {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
+    .contact__infos {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        color: white;
 
-.contact__icons {
-    position: relative;
-    width: 80%;
-    margin: 30px auto;
+        p {
+            margin-bottom: 1em;
+        }
+    }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    .contact__icons {
+        position: relative;
+        width: 100vw;
+        margin: 30px auto;
 
-.icon--big {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    border: solid white 3px;
-    margin: 10px 10px;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.icon--small {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: solid white 3px;
-    margin: 10px 10px;
-}
+    .icon--big {
+        height: 22vw;
+        width: 22vw;
+        border-radius: 50%;
+        border: solid white 3px;
+        margin: 10px 10px;
+    }
 
-.contact__close {
-    display: flex;
-    bottom: 0;
-    justify-content: center;
+    .icon--small {
+        height: 18vw;
+        width: 18vw;
+        border-radius: 50%;
+        border: solid white 3px;
+        margin: 10px 10px;
+    }
+
+    .contact__close {
+        display: flex;
+        bottom: 0;
+        justify-content: center;
+    }
+
 }

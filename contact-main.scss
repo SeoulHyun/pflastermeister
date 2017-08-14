@@ -1,0 +1,128 @@
+/* ===== contact-main ===== */
+
+@import 'assets/scss/base/colors';
+@import 'assets/scss/base/breakpoints';
+@import 'assets/scss/helpers/mixins';
+
+#contact {
+    background-color: $orange10;
+    position: relative;
+    min-height: 100vh;
+}
+
+.contact__logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    right: 10vw;
+}
+
+.contact__section {
+    padding: 30px 50px 20px 50px;
+    color: white;
+
+    &:last-child  {
+
+        @media (min-width: 992px) {
+            padding-top: 200px;
+        }
+
+
+        & p {
+            font-size: 0.7em;
+        }
+    }
+
+    // border left and right
+//    &:nth-child(2) {
+//
+//        @media (min-width: 768px) {
+//            border-right: 3px solid white;
+//        }
+//
+//        @media (min-width: 992px) {
+//            border-left: 3px solid white;
+//        }
+//    }
+}
+
+
+.contact__back {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.form {
+    width: 100%;
+    color: black;
+}
+
+.form__input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 10px;
+
+    &:first-child {
+        width: 30%;
+    }
+}
+
+.form__input--inline {
+    display: flex;
+
+    .form__input:nth-child(2) {
+        width: 70%;
+    }
+
+}
+
+.form__textarea {
+    @extend .form__input;
+    height: 200px;
+}
+
+.form__captcha {
+    width: 60%;
+    height: 60px;
+    background-color: white;
+}
+
+.form__button {
+    width: 40%;
+}
+
+.form__icon {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

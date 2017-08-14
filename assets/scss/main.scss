@@ -1,4 +1,5 @@
 // base
+@import 'base/breakpoints';
 @import 'base/colors';
 @import 'base/reset';
 @import 'base/typography';
@@ -9,6 +10,7 @@
 @import 'components/sections/header';
 @import 'components/sections/logo';
 @import 'components/sections/sections';
+@import 'components/contact-main';
 @import 'components/contact-side';
 
 // helpers

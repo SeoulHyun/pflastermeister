@@ -7,5 +7,7 @@
 
     background-image: image("background_pflastermeister.jpg");
 
-    @extend %background--responsive;
+    background-size: cover;
+    @extend %background--fixed;
+
 }

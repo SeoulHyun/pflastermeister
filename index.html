@@ -13,8 +13,12 @@
 
     <link rel="stylesheet" href="assets/scss/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
 </head>
 <body>
+
+    <!-- -------------- PFLASTERMEISTER -------------- -->
 
     <div id="pflastermeister">
         <div class="section__logo">
@@ -28,42 +32,46 @@
         </div>
 
         <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
+            <button class="button--contact">Kontakt</button>
         </div>
     </div>
 
-    <!-- <div id="contact">
-        <div class="logo">
-            <div class="logo__image"><a class="logo__link" href="#"></a></div>
+    <!-- -------------- KONTACT -------------- -->
+
+    <div id="contact">
+
+        <div class="contact__logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image" src="assets/images/logo_pflastermeister_2.svg">
+            </a>
         </div>
 
-        <div id="contact_content">
+        <div id="contact__content">
 
-            <div class="contact_form contact_wrapper">
+            <div class="contact__form contact__wrapper">
                 <h2>Kontakt</h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Anrede">
-                    <input type="text" name="" id="" placeholder="Vorname">
-                    <input type="text" name="" id="" placeholder="Nachname">
-                    <input type="text" name="" id="" placeholder="Firma">
-                    <input type="text" name="" id="" placeholder="Adresse">
+                <form action="" class="form">
+                    <input type="text" name="" id="" class="form__input" placeholder="Anrede">
+                    <input type="text" name="" id="" class="form__input" placeholder="Vorname">
+                    <input type="text" name="" id="" class="form__input" placeholder="Nachname">
+                    <input type="text" name="" id="" class="form__input" placeholder="Firma">
+                    <input type="text" name="" id="" class="form__input" placeholder="Adresse">
 
-                    <div id="city" class="flex-row">
-                        <input type="text" name="" id="" placeholder="PLZ">
-                        <input type="text" name="" id="" placeholder="Ort">
+                    <div class="form__group">
+                        <input type="text" name="" id="" class="form__input" placeholder="PLZ">
+                        <input type="text" name="" id="" class="form__input" placeholder="Ort">
                     </div>
 
-                    <input type="text" name="" id="" placeholder="Land">
-                    <input type="textarea" placeholder="Ihre Nachricht">
+                    <input type="text" name="" id="" placeholder="Land" class="form__input">
+                    <textarea name="" id="" class="form__textarea" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
                 </form>
             </div>
-            <div class="contact_credits contact_wrapper">
+
+            <div class="contact__credits contact__wrapper">
                 <h2>Impressum</h2>
                 <p>
-                    <strong>Betreiber / Verantwortlicher für den Inhalt</strong><br>
+                    <b>Betreiber / Verantwortlicher für den Inhalt</b><br>
                     Carola Tomasek <br>
                     Hochrain 16 <br>
                     4842 Zell am Pettenfirst
@@ -97,40 +105,51 @@
                     <b>Eintrag bei WK Österreich</b><br>
                     Firmen A-Z
                 </p>
-            </div>
-            <div class="contact_copyright contact_wrapper">
-                <b>Copyright</b>
-                <div class="small-text">
-                    Inhalt, Struktur und Layout der Website „www.pavingtools.at“ sind urheberrechtlich
-                    geschützt. Urheberrechte für Bildmaterial, Texte und andere geschützte Werke, Marken
-                    und Kennzeichen werden dadurch nicht beschnitten. Die Vervielfältigung (inklusive des
-                    Ausdrucks auf Papier) oder die Verwendung der Website bzw. Teilen davon zu Informationszwecken
-                    ist gestattet. Jede andere Verwendung der auf dieser Website verfügbaren Inhalte zu
-                    einem anderen als dem oben genannten Zweck ist ohne ausdrückliche, schriftliche Zustimmung
-                    des jeweiligen Urhebers untersagt.
-                </div>
-                <b>Disclaimer</b>
-                <div class="small-text">
-                    Die Nutzung der Website „www.pavingtools.at“ dient rein zur Information. Carola Tomasek
-                    übernimmt keine Gewähr für Aktualität, Vollständigkeit, oder Qualität der bereitgestellten
-                    Informationen. Eine Haftung für Schäden jeglicher Art, die aufgrund der Nutzung oder Nichtnutzung
-                    dargebotener Informationen bzw. durch Nutzung fehlerhafter oder unvollständiger Informationen
-                    verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens Carola Tomasek nachweislich
-                    kein Vorsatz oder grob fahrlässiges Verhalten vorliegt. Bei direkten oder indirekten Verweisen
-                    auf fremde Websites (Hyperlinks) trifft Carola Tomasek nur insofern eine Haftung, als Sie von
-                    rechtswidrigen Inhalten Kenntnis besitzt und es ihr technisch möglich und zumutbar ist, die
-                    Nutzung der rechtswidrigen Inhalte zu verhindern. Carola Tomasek erklärt, dass zum Zeitpunkt
-                    der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die
-                    aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/ verknüpften
-                    Seiten hat Carola Tomasek keinen Einfluss und distanziert sich daher ausdrücklich von dort
-                    dargestellten, allenfalls ungesetzlichen Inhalten. Dieser Haftungsausschluss (Disclaimer) ist
-                    als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde.
-                    Sofern Teile oder einzelne Formulierungen dieses Haftungsausschlusses der geltenden Rechtslage
-                    nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des
-                    Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
+                <div class="contact__icons">
+                    <div class="icon--middle"></div>
+                    <div class="icon--middle"></div>
+                    <div class="icon--middle"></div>
+                    <div class="icon--middle"></div>
                 </div>
             </div>
-            
+
+            <div class="contact__copyright contact__wrapper">
+            <b class="copyright__text">Copyright</b>
+            <p class="copyright__text--small">
+                Inhalt, Struktur und Layout der Website „www.pavingtools.at“ sind urheberrechtlich
+                geschützt. Urheberrechte für Bildmaterial, Texte und andere geschützte Werke, Marken
+                und Kennzeichen werden dadurch nicht beschnitten. Die Vervielfältigung (inklusive des
+                Ausdrucks auf Papier) oder die Verwendung der Website bzw. Teilen davon zu Informationszwecken
+                ist gestattet. Jede andere Verwendung der auf dieser Website verfügbaren Inhalte zu
+                einem anderen als dem oben genannten Zweck ist ohne ausdrückliche, schriftliche Zustimmung
+                des jeweiligen Urhebers untersagt.
+            </p>
+            <b class="copyright__text">Disclaimer</b>
+            <p class="copyright__text--small">
+                Die Nutzung der Website „www.pavingtools.at“ dient rein zur Information. Carola Tomasek
+                übernimmt keine Gewähr für Aktualität, Vollständigkeit, oder Qualität der bereitgestellten
+                Informationen. Eine Haftung für Schäden jeglicher Art, die aufgrund der Nutzung oder Nichtnutzung
+                dargebotener Informationen bzw. durch Nutzung fehlerhafter oder unvollständiger Informationen
+                verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens Carola Tomasek nachweislich
+                kein Vorsatz oder grob fahrlässiges Verhalten vorliegt. Bei direkten oder indirekten Verweisen
+                auf fremde Websites (Hyperlinks) trifft Carola Tomasek nur insofern eine Haftung, als Sie von
+                rechtswidrigen Inhalten Kenntnis besitzt und es ihr technisch möglich und zumutbar ist, die
+                Nutzung der rechtswidrigen Inhalte zu verhindern. Carola Tomasek erklärt, dass zum Zeitpunkt
+                der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die
+                aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/ verknüpften
+                Seiten hat Carola Tomasek keinen Einfluss und distanziert sich daher ausdrücklich von dort
+                dargestellten, allenfalls ungesetzlichen Inhalten. Dieser Haftungsausschluss (Disclaimer) ist
+                als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde.
+                Sofern Teile oder einzelne Formulierungen dieses Haftungsausschlusses der geltenden Rechtslage
+                nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des
+                Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
+            </p>
+        </div>
+
+        </div>
+
+        <div class="contact__back">
+            <button class="button--contact"><h4>Zurück</h4></button>
         </div>
     </div>
 
@@ -172,9 +191,7 @@
         </div>
 
         <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
+            <button class="button--contact">Kontakt</button>
         </div>
 
     </div>
@@ -224,9 +241,7 @@
         </div>
 
         <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
+            <button class="button--contact">Kontakt</button>
         </div>
 
     </div>
@@ -274,9 +289,7 @@
         </div>
 
         <div class="section__button">
-            <button class="button--contact">
-                <h4 class="button__text">Kontakt</h4>
-            </button>
+            <button class="button--contact">Kontakt</button>
         </div>
 
     </div>

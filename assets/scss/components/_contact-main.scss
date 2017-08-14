@@ -1,0 +1,167 @@
+/* ===== contact-main ===== */
+
+@import '../base/colors';
+@import '../base/breakpoints';
+@import '../helpers/mixins';
+
+#contact {
+    background-color: $orange10;
+    position: relative;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10vw;
+
+        @include respond-to($for-tablet-portrait-up) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 3vw 0;
+        }
+
+        @include respond-to($for-desktop-up) {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.contact__logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    right: 10vw;
+    display: none;
+
+    @include respond-to($for-desktop-up) {
+        display: block;
+    }
+}
+
+.contact__wrapper {
+    padding: 50px 0;
+    color: white;
+
+    @include respond-to($for-tablet-portrait-up) {
+        padding: 0 3vw;
+
+        &:nth-child(-n+2) {
+            width: 43%;
+        }
+    }
+
+    @include respond-to($for-desktop-up) {
+        &:nth-child(-n+3) {
+            width: 30%;
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    &__input:first-child {
+        width: 40%;
+    }
+
+    &__group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        input:first-child {
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        input:nth-child(2) {
+            width: 70%;
+        }
+    }
+
+    &__textarea {
+        @extend .form__input;
+    }
+
+}
+
+.contact__credits {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    p {
+        margin: 10px 0;
+        line-height: 1.5em;
+    }
+
+    @include respond-to($for-tablet-portrait-up) {
+        border: none;
+        border-left: 2px solid white;
+    }
+
+    @include respond-to($for-desktop-up) {
+        border-right: 2px solid white;
+    }
+}
+
+.contact__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .icon--middle {
+        height: 15vw;
+        width: 15vw;
+
+        border: 3px solid white;
+        border-radius: 50%;
+
+        @include respond-to($for-tablet-portrait-up) {
+            height: 8vw;
+            width: 8vw;
+        }
+
+        @include respond-to($for-desktop-up) {
+            height: 4.5vw;
+            width: 4.5vw;
+        }
+    }
+}
+
+.contact__copyright {
+    font-family: 'Montserrat', sans-serif;
+
+    @include respond-to($for-tablet-portrait-up) {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    @include respond-to($for-desktop-up) {
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.copyright__text--small {
+    font-size: .8em;
+
+    @include respond-to($for-tablet-portrait-up) {
+        font-size: 0.6em;
+    }
+}
+
+.contact__back {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}

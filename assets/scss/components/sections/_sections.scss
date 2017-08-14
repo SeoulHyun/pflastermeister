@@ -1,5 +1,7 @@
 /* ===== sections ===== */
 
+@import '../../helpers/placeholders';
+
 .section {
     position: relative;
     padding-bottom: 15vh;
@@ -15,8 +17,7 @@
 
         z-index: -1;
 
-        background: no-repeat fixed center;
-        background-size: cover;
+        @extend %background--fixed;
     }
 
     &__header {
