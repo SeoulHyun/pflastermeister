@@ -261,17 +261,58 @@ h1, h2, h3, h4, h5, h6 {
 
 #contactFullWidth {
     height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/background_pflastermeister_2_blur.jpg");
+
+    p, h3, h5 {
+        color: white;
+    }
+
+    .contactFullWidth {
+        &__background {
+            background-color: $textBg;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
 
     .kontakt {
         height: 100vh;
 
 
         &__form {
-
+            form {
+                input, textarea {
+                    width: 100%;
+                    display: block;
+                    height: 38px;
+                    margin-bottom: 14px;
+                    padding-left: 10px;
+                    border: 2px solid rgb(238, 238, 238);
+                }
+                textarea {
+                    padding-top: 5px;
+                    height: 130px;
+                }
+                .anrede {
+                    width: 30%;
+                }
+                .g-recaptcha {
+                    display: inline-block;
+                }
+            }
         }
     }
     .impressum {
         height: 100vh;
+
+
     }
 }
 

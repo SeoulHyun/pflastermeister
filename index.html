@@ -22,6 +22,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link rel="stylesheet" href="scss/mainStyle.css">
     <script src="js/animation.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
@@ -131,31 +133,67 @@
     </div>
 
     <div id="contactFullWidth" class="col-12">
+        <div class="contactFullWidth__background">
+        </div>
         <div class="kontakt col-md-4">
             <div class="kontakt__form col-md-10 col-md-push-1">
                 <form class="form-horizontal">
-                    <legend>Kontakt</legend>
-
+                    <h3>Kontakt</h3>
                     <div class="form-group">
-                        <input id="anrede" name="anrede" placeholder="Anrede" class="form-control input-md" required="">
-                        <input id="vorname" name="vorname" placeholder="Vorname" class="form-control input-md" required="">
-                        <input id="nachname" name="nachname" placeholder="Nachname" class="form-control input-md" required="">
-                        <input id="firma" name="firma" placeholder="Firma" class="form-control input-md">
-                        <input id="adresse" name="adresse" placeholder="Adresse" class="form-control input-md">
-                        <input id="plz" name="plz" placeholder="PLZ" class="form-control input-md" type="number">
-                        <input id="ort" name="ort" placeholder="Ort" class="form-control input-md">
-                        <input id="land" name="land" placeholder="Land" class="form-control input-md">
-                        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" class="form-control"></textarea>
-                        <button id="senden" class="btn btn-primary">Button</button>
+                        <input id="anrede" name="anrede" placeholder="Anrede" class="anrede" required="">
+                        <input id="vorname" name="vorname" placeholder="Vorname" required="">
+                        <input id="nachname" name="nachname" placeholder="Nachname" required="">
+                        <input id="firma" name="firma" placeholder="Firma">
+                        <input id="adresse" name="adresse" placeholder="Adresse">
+                        <input id="plz" name="plz" placeholder="PLZ" type="number">
+                        <input id="ort" name="ort" placeholder="Ort">
+                        <input id="land" name="land" placeholder="Land">
+                        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht"></textarea>
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        <button id="senden">Button</button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="impressum col-md-4">
-
+            <div class="impressum__content">
+                <h3>Impressum</h3>
+                <p><bold>Betreiber/Verantwortlicher für den Inhalt</bold></p>
+                <p>
+                    Carola Tomasek <br />
+                    Hochrain 16 <br />
+                    4842 Zell am Pettenfirst
+                </p>
+                <p>
+                    Telefon: 0043(0) 699 1000 72 18<br />
+                    info@pavingtools.at<br />
+                    http://www.pavingtools.at
+                </p>
+                <p><bold>Gewerberegisternummer</bold><br />
+                417/24448</p>
+                <p><bold>Gerichtsstand</bold><br />
+                Bezirksgericht Vöcklabruck</p>
+                <p><bold>Kammer</bold><br />
+                Wirtschaftskammer Oberösterreich</p>
+                <p><bold>Umsatzsteuer-Identifikationsnummer</bold><br />
+                ATU67305114</p>
+                <p><bold>Behörde gemäß §55 ECG</bold><br />
+                Bezirkshauptmannschaft Vöcklabruck</p>
+                <p><bold>Eintrag bei WK Österreich</bold><br />
+                Firmen A-Z</p>
+            </div>
         </div>
         <div class="copyright col-md-4">
+            <div class="copyright__logo">
+            </div>
 
+            <div class="copyright__content">
+                <h5>Copyright</h5>
+                <p>Inhalt,StrukturundLayoutderWebsite„www.pavingtools.at“sindurheberrechtlichgeschützt.UrheberrechtefürBildmaterial,TexteundanderegeschützteWerke,MarkenundKennzeichenwerdendadurchnichtbeschnitten.DieVervielfältigung(inklusivedes Ausdrucks aufPapier)oderdie VerwendungderWebsitebzw.TeilendavonzuInformationszweckenistgestattet.JedeandereVerwendungderaufdieserWebsiteverfügbarenInhalte zu einem anderenals demobengenanntenZweckistohneausdrückliche,schriftlicheZustimmungdes jeweiligenUrhebers untersagt.</p>
+
+                <h5>Disclaimer</h5>
+                <p>Die NutzungderWebsite„www.pavingtools.at“dientreinzurInformation.CarolaTomasekübernimmtkeineGewährfürAktualität,Vollständigkeit,oderQualität derbereitgestelltenInformationen.EineHaftungfürSchädenjeglicher Art,dieaufgrundderNutzungoderNichtnutzungdargebotenerInformationenbzw.durchNutzungfehlerhafteroderunvollständigerInformationenverursachtwurden,sindgrundsätzlichausgeschlossen,sofernseitens CarolaTomaseknachweislichkeinVorsatzodergrobfahrlässiges Verhaltenvorliegt.BeidirektenoderindirektenVerweisenauffremdeWebsites (Hyperlinks)trifftCarolaTomaseknurinsoferneineHaftung,als Sievon rechtswidrigenInhaltenKenntnis besitztundes ihrtechnischmöglichundzumutbarist,dieNutzungderrechtswidrigenInhaltezuverhindern.CarolaTomasekerklärt,dass zumZeitpunktderLinksetzungkeineillegalenInhalte auf denzuverlinkendenSeitenerkennbarwaren.AufdieaktuelleundzukünftigeGestaltung,dieInhalteoderdieUrheberschaftdergelinkten/verknüpftenSeitenhatCarolaTomasekkeinenEinfluss unddistanziertsichdaher ausdrücklichvondortdargestellten,allenfalls ungesetzlichenInhalten.Dieser Haftungsausschluss (Disclaimer)istals Teildes Internetangebotes zubetrachten,vondemaus aufdieseSeiteverwiesenwurde.SofernTeileodereinzelneFormulierungendieses Haftungsausschlusses dergeltendenRechtslagenicht,nichtmehrodernichtvollständigentsprechensollten,bleiben dieübrigenTeiledes DokumentesinihremInhaltundihrerGültigkeitdavonunberührt.</p>
+            </div>
         </div>
     </div>
 
