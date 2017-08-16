@@ -58,6 +58,20 @@ $(document).ready(function () {
             }) // add indicators (requires plugin)
             .addTo(controller);
 
+        new ScrollMagic.Scene({
+            triggerElement: el,
+            triggerHook: 0
+        })
+            .setVelocity("#animate", {
+                opacity: 1
+            }, {
+                duration: 1000
+            })
+            .addIndicators({
+                name: "opacity"
+            })
+            .addTo(controller);
+
     }
 
     scrollBlur('#tools');
