@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var controller = new ScrollMagic.Controller();
 
-    $('.content').each(function () {
+    /*$('.content').each(function () {
 
         console.log(this);
 
@@ -27,8 +27,6 @@ $(document).ready(function () {
                 calc = 0,
                 offset = trainingHeight / 100;
 
-
-
             if (scrollTop > (trainingTop + offset)) {
                 calc = ((scrollTop - (trainingTop + offset)) / trainingHeight) * 10;
                 $(this).children(':nth-child(2)').css({'opacity': calc});
@@ -45,13 +43,24 @@ $(document).ready(function () {
         })
 
 
-    })
+    })*/
 
-    $('.contact_button').click(function () {
-        $('#tools_contact').show("slow")
-    })
+    function scrollBlur(el) {
 
-    $('.side_bar_button').click(function () {
-        $('.side_bar').hide("slow");
-    })
+        new ScrollMagic.Scene({
+            triggerElement: el,
+            triggerHook: 0,
+            duration: $(el).height()*0.4
+        })
+            .setPin(el)
+            .addIndicators({
+                name: "PIN"
+            }) // add indicators (requires plugin)
+            .addTo(controller);
+
+    }
+
+    scrollBlur('#tools');
+    scrollBlur('#training');
+    scrollBlur('#technology');
 });
